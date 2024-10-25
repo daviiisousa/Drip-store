@@ -2,7 +2,7 @@
 
 - Davi
 - Thiago
-- Victor
+- Victor Rodrigues
 - RhuannSilv
 
 ## Descrição do Projeto
