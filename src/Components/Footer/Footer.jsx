@@ -1,5 +1,5 @@
 import "./Footer.css";
 
-export const Header = () => {
+export const Footer = () => {
   return <></>;
 };
