@@ -1,0 +1,85 @@
+.collection-card {
+  width: 405px;
+  height: 251px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem 5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.collection-card:hover {
+  transform: scale(1.05);
+}
+
+.discount {
+  background-color: #ccff90;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.collection-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.collection-label {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.collection-button {
+  background-color: #ff4081;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.collection-button:hover {
+  background-color: #e91e63;
+}
+
+/* Regras para dispositivos móveis @media (max-width: 768px) {
+  .collection-card {
+    padding: 1rem 2rem;
+  }
+
+  .collection-label {
+    font-size: 1.2em;
+  }
+
+  .collection-button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .collection-card {
+    padding: 0.5rem 1rem;
+  }
+
+  .collection-label {
+    font-size: 1em;
+  }
+
+  .collection-button {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+} */
