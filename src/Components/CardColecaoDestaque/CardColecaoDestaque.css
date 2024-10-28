@@ -1,14 +1,14 @@
 .collection-card {
   width: 405px;
   height: 251px;
-  gap: 0px;
+
   border-radius: 8px 0px 0px 0px;
   opacity: 0px;
-
+  position: relative;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 2rem 5rem;
-  text-align: center;
+  padding: 1.3rem 3rem;
+  text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
@@ -24,19 +24,35 @@
   border-radius: 5px;
   display: inline-block;
   margin-bottom: 10px;
-}
-
-.collection-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  z-index: 1;
+  position: relative;
 }
 
 .collection-label {
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 10px;
+  padding: 0.5rem 0rem 0.3rem;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 2px;
+  z-index: 1;
+  position: relative;
+  width: 100%; /* Garantindo que o elemento ocupe 100% do espaço disponível */
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+.collection-image {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10px;
+  z-index: 1;
+
+  min-width: 8rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .collection-button {
@@ -48,6 +64,8 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 1em;
+  z-index: 1;
+  position: relative;
 }
 
 .collection-button:hover {

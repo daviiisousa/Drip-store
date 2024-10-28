@@ -1,34 +1,36 @@
 import CardColecaoDestaque from "../CardColecaoDestaque/CardColecaoDestaque";
 import "./SectionColecaoDestaque.css";
+import CamisaDestaque from "../../assets/HomeFotos/CamisaDestaque.png";
+import SapatoDestaque from "../../assets/HomeFotos/SapatoDestaque.png";
+import FoneDestaque from "../../assets/HomeFotos/FoneDestaque.png";
 
 export const SectionColecaoDestaque = () => {
   return (
     <div className="Colecao">
-      <h2>Coleções em destaque</h2>
-
       {/* Cards de Coleção */}
       <div className="Col">
+        <h2>Coleções em destaque</h2>
         <CardColecaoDestaque
           label="Novo drop Supreme"
-          img="link-para-imagem-supreme"
+          img={CamisaDestaque}
           discount="30% OFF"
         />
 
         <CardColecaoDestaque
           label="Coleção Adidas"
-          img="link-para-imagem-adidas"
+          img={SapatoDestaque}
           discount="30% OFF"
         />
 
         <CardColecaoDestaque
           label="Novo Beats Bass"
-          img="link-para-imagem-beats"
+          img={FoneDestaque}
           discount="30% OFF"
         />
       </div>
 
       {/* Ícones de Categoria */}
-      <h2>Coleções em destaque</h2>
+      <h2 className="destaqueIcons">Coleções em destaque</h2>
     </div>
   );
 };

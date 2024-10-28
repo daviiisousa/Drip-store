@@ -1,5 +1,6 @@
 import "./CardColecaoDestaque.css";
 
+// eslint-disable-next-line react/prop-types
 function CardColecaoDestaque({ label, img, discount }) {
   return (
     <div className="collection-card">

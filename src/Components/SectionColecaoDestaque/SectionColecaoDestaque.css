@@ -1,25 +1,30 @@
 .Colecao {
-  padding: 0.5rem 0.8rem 0rem;
+  padding: 0.5rem
   justify-content: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Colecao h2 {
-  font-family: Inter;
+  color: #333;
+  text-align: left;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px; /* 158.333% */
-  letter-spacing: 0.75px;
 }
 
 .Col {
   display: flex;
   justify-content: center;
+  flex-wrap:;
   gap: 1.4rem;
-  margin: 1rem;
+  margin: 0.8rem;
 }
+
+h2.destaqueIcons {
+  text-align: center;
+  margin-top: 20px; /* Garante um pouco de espaçamento no topo */
+  /* width:; Garante que o texto fique centralizado */
+}
+
 /* 
 Regras para dispositivos móveis @media (max-width: 768px) {
   .Col {
