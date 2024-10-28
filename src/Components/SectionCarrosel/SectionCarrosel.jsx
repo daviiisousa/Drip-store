@@ -12,40 +12,95 @@ import "swiper/css/pagination";
 export const SectionCarrosel = () => {
   return (
     <>
-      <section className="sectionCarrosel">
-        <div className="divTextosCarrosel">
-          <p className="carroselOferta">Melhores ofertas personalizadas</p>
-          <h2 className="carroselTitulo">Queima de stoque Nike 🔥</h2>
-          <p className="descricaoCarrosel">
-            Consequat culpa exercitation mollit nisi excepteur do do tempor
-            laboris eiusmod irure consectetur.
-          </p>
-          <div className="divBtnCarrosel">
-            <BtnPrimary texto={"Ver Ofertas"} />
-          </div>
-        </div>
-        <Swiper
-           pagination={true}
-           modules={[Pagination, Autoplay]} 
-           autoplay={{
-             delay: 5000, 
-             disableOnInteraction: false, 
-           }}
-        >
-          <SwiperSlide>
+      <Swiper
+        pagination={true}
+        modules={[Pagination, Autoplay]}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+      >
+        <SwiperSlide>
+          <section className="sectionCarrosel">
+            <div className="divTextosCarrosel">
+              <p className="carroselOferta">Melhores ofertas personalizadas</p>
+              <h2 className="carroselTitulo">Queima de stoque Nike 🔥</h2>
+              <p className="descricaoCarrosel">
+                Consequat culpa exercitation mollit nisi excepteur do do tempor
+                laboris eiusmod irure consectetur.
+              </p>
+              <div className="divBtnCarrosel">
+                <BtnPrimary texto={"Ver Ofertas"} />
+              </div>
+            </div>
+
             <div className="divFotosCarrosel">
               <img src={SapatoCarrosel} alt="" />
               <img src={Ornament11} alt="" />
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="divFotosCarrosel">
-              <img src={SapatoCarrosel} alt="sapato nike" />
-              <img src={Ornament11} alt="oranament" />
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <section className="sectionCarrosel">
+            <div className="divTextosCarrosel">
+              <p className="carroselOferta">Melhores ofertas personalizadas</p>
+              <h2 className="carroselTitulo">Queima de stoque Nike 🔥</h2>
+              <p className="descricaoCarrosel">
+                Consequat culpa exercitation mollit nisi excepteur do do tempor
+                laboris eiusmod irure consectetur.
+              </p>
+              <div className="divBtnCarrosel">
+                <BtnPrimary texto={"Ver Ofertas"} />
+              </div>
             </div>
-          </SwiperSlide>
-        </Swiper>
-      </section>
+
+            <div className="divFotosCarrosel">
+              <img src={SapatoCarrosel} alt="" />
+              <img src={Ornament11} alt="" />
+            </div>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <section className="sectionCarrosel">
+            <div className="divTextosCarrosel">
+              <p className="carroselOferta">Melhores ofertas personalizadas</p>
+              <h2 className="carroselTitulo">Queima de stoque Nike 🔥</h2>
+              <p className="descricaoCarrosel">
+                Consequat culpa exercitation mollit nisi excepteur do do tempor
+                laboris eiusmod irure consectetur.
+              </p>
+              <div className="divBtnCarrosel">
+                <BtnPrimary texto={"Ver Ofertas"} />
+              </div>
+            </div>
+
+            <div className="divFotosCarrosel">
+              <img src={SapatoCarrosel} alt="" />
+              <img src={Ornament11} alt="" />
+            </div>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <section className="sectionCarrosel">
+            <div className="divTextosCarrosel">
+              <p className="carroselOferta">Melhores ofertas personalizadas</p>
+              <h2 className="carroselTitulo">Queima de stoque Nike 🔥</h2>
+              <p className="descricaoCarrosel">
+                Consequat culpa exercitation mollit nisi excepteur do do tempor
+                laboris eiusmod irure consectetur.
+              </p>
+              <div className="divBtnCarrosel">
+                <BtnPrimary texto={"Ver Ofertas"} />
+              </div>
+            </div>
+
+            <div className="divFotosCarrosel">
+              <img src={SapatoCarrosel} alt="" />
+              <img src={Ornament11} alt="" />
+            </div>
+          </section>
+        </SwiperSlide>
+      </Swiper>
     </>
   );
 };

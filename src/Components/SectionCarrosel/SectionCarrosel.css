@@ -26,7 +26,7 @@
 }
 
 .divTextosCarrosel{
-    width: 80%;
+    width: 50%;
 }
 
 .divBtnCarrosel :first-child{
@@ -36,4 +36,5 @@
 .divFotosCarrosel{
     display: flex;
     align-items: start;
+    width: 70%;
 }
