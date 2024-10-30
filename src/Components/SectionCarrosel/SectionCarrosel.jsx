@@ -1,5 +1,6 @@
 import "./SectionCarrosel.css";
 import SapatoCarrosel from "../../assets/HomeFotos/Sapatocarrosel.png";
+import sapatoCarroselReto from '../../assets/HomeFotos/sapatoCarroselReto.png'
 import Ornament11 from "../../assets/HomeFotos/Ornament 11.png";
 import { BtnPrimary } from "../../Components/Buotoes/BtnPrimary/BtnPrimary";
 
@@ -35,8 +36,8 @@ export const SectionCarrosel = () => {
             </div>
 
             <div className="divFotosCarrosel">
-              <img src={SapatoCarrosel} alt="" />
-              <img src={Ornament11} alt="" />
+              <img className="sapatoCarrosel" src={sapatoCarroselReto} alt="sapatp nike" />
+              <img src={Ornament11} alt="ornament" />
             </div>
           </section>
         </SwiperSlide>
@@ -55,8 +56,8 @@ export const SectionCarrosel = () => {
             </div>
 
             <div className="divFotosCarrosel">
-              <img src={SapatoCarrosel} alt="" />
-              <img src={Ornament11} alt="" />
+              <img className="sapatoCarrosel" src={sapatoCarroselReto} alt="sapatp nike" />
+              <img src={Ornament11} alt="ornament" />
             </div>
           </section>
         </SwiperSlide>
@@ -75,8 +76,8 @@ export const SectionCarrosel = () => {
             </div>
 
             <div className="divFotosCarrosel">
-              <img src={SapatoCarrosel} alt="" />
-              <img src={Ornament11} alt="" />
+              <img className="sapatoCarrosel" src={sapatoCarroselReto} alt="sapatp nike" />
+              <img src={Ornament11} alt="ornament" />
             </div>
           </section>
         </SwiperSlide>
@@ -95,8 +96,8 @@ export const SectionCarrosel = () => {
             </div>
 
             <div className="divFotosCarrosel">
-              <img src={SapatoCarrosel} alt="" />
-              <img src={Ornament11} alt="" />
+              <img className="sapatoCarrosel" src={sapatoCarroselReto} alt="sapatp nike" />
+              <img src={Ornament11} alt="ornament" />
             </div>
           </section>
         </SwiperSlide>

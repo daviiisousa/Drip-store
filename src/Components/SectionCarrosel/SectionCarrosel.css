@@ -38,3 +38,13 @@
     align-items: start;
     width: 70%;
 }
+
+.sapatoCarrosel{
+    transition: 0.5s;
+    width: 733.51px;
+}
+
+.sapatoCarrosel:hover{
+    transform: rotate(-19.34deg);
+    transition: 0.5s;
+}
