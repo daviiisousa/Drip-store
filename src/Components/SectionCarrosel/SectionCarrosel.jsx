@@ -1,5 +1,4 @@
 import "./SectionCarrosel.css";
-import SapatoCarrosel from "../../assets/HomeFotos/Sapatocarrosel.png";
 import sapatoCarroselReto from '../../assets/HomeFotos/sapatoCarroselReto.png'
 import Ornament11 from "../../assets/HomeFotos/Ornament 11.png";
 import { BtnPrimary } from "../../Components/Buotoes/BtnPrimary/BtnPrimary";
