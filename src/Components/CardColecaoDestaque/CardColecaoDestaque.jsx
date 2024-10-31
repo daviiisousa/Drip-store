@@ -1,6 +1,6 @@
 import "./CardColecaoDestaque.css";
+import { BtnDefault } from "../Buotoes/BtnDefault/BtnDefault";
 
-// eslint-disable-next-line react/prop-types
 function CardColecaoDestaque({ label, img, discount }) {
   return (
     <div className="collection-card">
@@ -14,7 +14,7 @@ function CardColecaoDestaque({ label, img, discount }) {
         }} // Imagem padrão
       />
       <p className="collection-label">{label}</p>
-      <button className="collection-button">Comprar</button>
+      <BtnDefault texto={"Comprar"} />
     </div>
   );
 }
