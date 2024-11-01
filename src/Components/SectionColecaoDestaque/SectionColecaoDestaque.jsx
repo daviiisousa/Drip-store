@@ -47,19 +47,19 @@ export const SectionColecaoDestaque = () => {
             <Camisa />
           </IconsColecao>
 
-          <IconsColecao label="Camisa">
+          <IconsColecao label="Calças">
             <Calça />
           </IconsColecao>
 
-          <IconsColecao label="Camisa">
+          <IconsColecao label="Bonés">
             <Camisa />
           </IconsColecao>
 
-          <IconsColecao label="Camisa">
+          <IconsColecao label="Headphones">
             <Camisa />
           </IconsColecao>
 
-          <IconsColecao label="Camisa">
+          <IconsColecao label="Tênis">
             <Tenis />
           </IconsColecao>
         </div>

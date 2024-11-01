@@ -1,62 +1,4 @@
 .Colecao {
-<<<<<<< HEAD
-    padding: 0.5rem;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .colunasDestaque {
-    padding: 1rem;
-  }
-  
-  .Colecao h2 {
-    color: #333;
-    text-align: left;
-    font-size: 24px;
-    padding-left: 1rem;
-  }
-  
-  .Col {
-    display: flex;
-    justify-content: center;
-    /* flex-wrap: ; */
-    gap: 1.4rem;
-    margin: 0.8rem;
-  }
-  
-  .colecaoIcons h2 {
-    padding-bottom: 2rem;
-    text-align: center;
-  }
-  
-  .Col-icon {
-    margin-inline: 14px;
-    display: flex;
-    justify-content: center;
-    /* flex-wrap: ; */
-    gap: 3rem;
-    margin: 0.8rem;
-  }
-  /* 
-  Regras para dispositivos móveis @media (max-width: 768px) {
-    .Col {
-      flex-direction: column;
-      gap: 2rem;
-      margin: 5rem;
-    }
-  
-    .Colecao {
-      padding: 1rem 0.5rem;
-    }
-  
-    .Colecao h2 {
-      font-size: 20px;
-      margin-bottom: 15px;
-    }
-  }
-  
-=======
   flex-direction: column;
   /* flex-wrap: wrap; */
   width: 100%
@@ -64,7 +6,10 @@
   /* max-width: 1800px; */
   display: flex;
 }
+.colecao-header {
+  margin: 2.3rem 0rem 0rem;
 
+}
 .colecao-header h2 {
   color: #333;
   align-items: center;
@@ -76,7 +21,7 @@
   justify-content: center;
   display: flex;
   gap: 2rem;
-  padding: 1.3rem;
+  padding: 1rem;
 }
 
 .colecao-icon-head h2 {
@@ -110,7 +55,6 @@
     }
   }
   
->>>>>>> SEctionColecaoDestaque
   @media (max-width: 480px) {
     .Col {
       flex-direction: column;
