@@ -11,35 +11,36 @@ import Tenis from "../../assets/IconsColecao/tenis.jsx";
 
 export const SectionColecaoDestaque = () => {
   return (
-    <div className="Colecao">
-      {/* Cards de Coleção */}
-      <div className="colunasDestaque">
+    <section className="Colecao">
+      <div className="colecao-header">
         <h2>Coleções em destaque</h2>
-        <div className="Col">
-          <CardColecaoDestaque
-            label="Novo drop Supreme"
-            img={CamisaDestaque}
-            discount="30% OFF"
-          />
+      </div>
+      <div className="produto-colecao">
+        <CardColecaoDestaque
+          label="Novo drop Supreme"
+          img={CamisaDestaque}
+          discount="30% OFF"
+        />
 
-          <CardColecaoDestaque
-            label="Coleção Adidas"
-            img={SapatoDestaque}
-            discount="30% OFF"
-          />
+        <CardColecaoDestaque
+          label="Coleção Adidas"
+          img={SapatoDestaque}
+          discount="30% OFF"
+        />
 
-          <CardColecaoDestaque
-            label="Novo Beats Bass"
-            img={FoneDestaque}
-            discount="30% OFF"
-          />
-        </div>
+        <CardColecaoDestaque
+          label="Novo Beats Bass"
+          img={FoneDestaque}
+          discount="30% OFF"
+        />
       </div>
 
       {/* Ícones de Categoria */}
 
       <div className="colecaoIcons">
-        <h2>Coleções em destaque</h2>
+        <div className="colecao-icon-head">
+          <h2>Coleções em destaque</h2>
+        </div>
 
         <div className="Col-icon">
           <IconsColecao label="Camisa">
@@ -63,6 +64,6 @@ export const SectionColecaoDestaque = () => {
           </IconsColecao>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -1,6 +1,6 @@
 .collection-card {
-  width: 405px;
-  height: 251px;
+  width: 100%;
+  height: 64%;
 
   border-radius: 8px 0px 0px 0px;
   opacity: 0px;
@@ -63,7 +63,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-}
+
 
 /* Regras para dispositivos móveis @media (max-width: 768px) {
   .collection-card {
