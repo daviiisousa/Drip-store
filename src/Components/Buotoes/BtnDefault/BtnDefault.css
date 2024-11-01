@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .btnDefault{
     width: 158px;
     height: 48px;
@@ -8,3 +9,20 @@
     font-weight: 700;
     font-size: 14px;
 }
+=======
+.btnDefault {
+  width: 158px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--light-gray-3);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.btnDefault:hover {
+  transform: scale(1.05);
+}
+>>>>>>> SEctionColecaoDestaque

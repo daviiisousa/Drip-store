@@ -14,7 +14,7 @@ function CardColecaoDestaque({ label, img, discount }) {
         }} // Imagem padrão
       />
       <p className="collection-label">{label}</p>
-      <BtnDefault texto={"Comprar"} />
+      <BtnDefault texto={"Comprar"} style={{ marginTop: "20px" }} />
     </div>
   );
 }

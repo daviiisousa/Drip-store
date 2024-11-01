@@ -1,9 +1,11 @@
-import './BtnDefault.css'
+import "./BtnDefault.css";
 
-export const BtnDefault = ({texto}) => {
-    return ( 
-        <>
-        <button className='btnDefault'>{texto}</button>
-        </>
-     );
-}
+export const BtnDefault = ({ texto, alternativeClass, ...props }) => {
+  return (
+    <>
+      <button className={`btnDefault ${alternativeClass}`} {...props}>
+        {texto}
+      </button>
+    </>
+  );
+};

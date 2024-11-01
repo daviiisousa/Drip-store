@@ -1,4 +1,5 @@
 .Colecao {
+<<<<<<< HEAD
     padding: 0.5rem;
     justify-content: center;
     border-radius: 10px;
@@ -55,6 +56,61 @@
     }
   }
   
+=======
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  width: 100%
+  justify-content: center;
+  /* max-width: 1800px; */
+  display: flex;
+}
+
+.colecao-header h2 {
+  color: #333;
+  align-items: center;
+  width: 100%;
+  margin-left: 1em;
+}
+
+.produto-colecao {
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+  padding: 1.3rem;
+}
+
+.colecao-icon-head h2 {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.Col-icon {
+  margin-inline: 14px;
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: ; */
+  gap: 3rem;
+  margin: 0.8rem;
+}
+/* 
+  Regras para dispositivos móveis @media (max-width: 768px) {
+    .Col {
+      flex-direction: column;
+      gap: 2rem;
+      margin: 5rem;
+    }
+  
+    .Colecao {
+      padding: 1rem 0.5rem;
+    }
+  
+    .Colecao h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+  
+>>>>>>> SEctionColecaoDestaque
   @media (max-width: 480px) {
     .Col {
       flex-direction: column;
@@ -70,4 +126,8 @@
       font-size: 18px;
       margin-bottom: 10px;
     }
+<<<<<<< HEAD
   } */
+=======
+  } */
+>>>>>>> SEctionColecaoDestaque
