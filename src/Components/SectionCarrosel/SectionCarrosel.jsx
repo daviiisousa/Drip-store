@@ -2,18 +2,16 @@ import "./SectionCarrosel.css";
 import { DivFotosCarrosel } from "../DivFotosCarrosel/DivFotosCarrosel";
 import { BtnPrimary } from "../../Components/Buotoes/BtnPrimary/BtnPrimary";
 
-
-import sapatoPadrao from '../../assets/HomeFotos/Sapatocarrosel.png'
-import sapatoBlack from '../../assets/HomeFotos/black-sneaker.png'
-import sapatoBrow from '../../assets/HomeFotos/brown-sneaker.png'
-import sapatoPurple from '../../assets/HomeFotos/purple-sneaker.png'
+import sapatoPadrao from "../../assets/HomeFotos/Sapatocarrosel.png";
+import sapatoBlack from "../../assets/HomeFotos/black-sneaker.png";
+import sapatoBrow from "../../assets/HomeFotos/brown-sneaker.png";
+import sapatoPurple from "../../assets/HomeFotos/purple-sneaker.png";
 
 //swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-
 
 export const SectionCarrosel = () => {
   return (
@@ -40,7 +38,7 @@ export const SectionCarrosel = () => {
               </div>
             </div>
 
-            <DivFotosCarrosel  fotoCarrosel={sapatoPadrao} />
+            <DivFotosCarrosel fotoCarrosel={sapatoPadrao} />
           </section>
         </SwiperSlide>
         <SwiperSlide>
@@ -75,7 +73,7 @@ export const SectionCarrosel = () => {
             </div>
 
             <DivFotosCarrosel fotoCarrosel={sapatoBlack} />
-            </section>
+          </section>
         </SwiperSlide>
         <SwiperSlide>
           <section className="sectionCarrosel">
@@ -91,7 +89,7 @@ export const SectionCarrosel = () => {
               </div>
             </div>
 
-           <DivFotosCarrosel fotoCarrosel={sapatoPurple} />
+            <DivFotosCarrosel fotoCarrosel={sapatoPurple} />
           </section>
         </SwiperSlide>
       </Swiper>
