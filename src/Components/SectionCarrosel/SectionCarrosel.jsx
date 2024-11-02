@@ -1,6 +1,5 @@
 import "./SectionCarrosel.css";
-import sapatoCarroselReto from '../../assets/HomeFotos/sapatoCarroselReto.png'
-import Ornament11 from "../../assets/HomeFotos/Ornament 11.png";
+import { DivFotosCarrosel } from "../DivFotosCarrosel/DivFotosCarrosel";
 import { BtnPrimary } from "../../Components/Buotoes/BtnPrimary/BtnPrimary";
 
 //swiper
@@ -8,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+
 
 export const SectionCarrosel = () => {
   return (
@@ -34,10 +34,7 @@ export const SectionCarrosel = () => {
               </div>
             </div>
 
-            <div className="divFotosCarrosel">
-              <img className="sapatoCarrosel" src={sapatoCarroselReto} alt="sapatp nike" />
-              <img src={Ornament11} alt="ornament" />
-            </div>
+            <DivFotosCarrosel />
           </section>
         </SwiperSlide>
         <SwiperSlide>
@@ -54,10 +51,7 @@ export const SectionCarrosel = () => {
               </div>
             </div>
 
-            <div className="divFotosCarrosel">
-              <img className="sapatoCarrosel" src={sapatoCarroselReto} alt="sapatp nike" />
-              <img src={Ornament11} alt="ornament" />
-            </div>
+            <DivFotosCarrosel />
           </section>
         </SwiperSlide>
         <SwiperSlide>
@@ -74,11 +68,8 @@ export const SectionCarrosel = () => {
               </div>
             </div>
 
-            <div className="divFotosCarrosel">
-              <img className="sapatoCarrosel" src={sapatoCarroselReto} alt="sapatp nike" />
-              <img src={Ornament11} alt="ornament" />
-            </div>
-          </section>
+            <DivFotosCarrosel />
+            </section>
         </SwiperSlide>
         <SwiperSlide>
           <section className="sectionCarrosel">
@@ -94,10 +85,7 @@ export const SectionCarrosel = () => {
               </div>
             </div>
 
-            <div className="divFotosCarrosel">
-              <img className="sapatoCarrosel" src={sapatoCarroselReto} alt="sapatp nike" />
-              <img src={Ornament11} alt="ornament" />
-            </div>
+           <DivFotosCarrosel />
           </section>
         </SwiperSlide>
       </Swiper>
