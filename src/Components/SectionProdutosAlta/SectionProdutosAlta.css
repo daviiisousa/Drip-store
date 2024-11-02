@@ -1,98 +1,24 @@
-
 .produtos-em-alta {
-    /* background-color: #f8f9fd; */
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    /* margin: 100px 100px 100px; */
-  }
-  
-  .produtos-em-alta-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .produtos-em-alta h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-left: 6.25rem;
-  }
-  
-  .ver-todos {
-    color:#C92071;
-    text-decoration: none;
-    /* font-weight: bold; */
-    font-size: 1.125rem;
-    margin-right: 6.25rem;
-  }
-  
-  .produtos {
-    /* width: 292px; */
-    /* height: 439px; */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    margin: 0px 100px 100px;
-  }
-  
-  .produto {
-    position: relative;
-    background-color: #f8f9fd;
-    /* border-radius: 8px; */
-    padding: 15px;
-    text-align: left;
-    box-shadow: 1px  var(--light-gray-3);
-    transition: transform 0.2s ease;
-  }
-  
-  .produto:hover {
-    transform: scale(1.03);
-  }
-  
-  .desconto {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    background-color: #E7FF86;
-    color: #474747;
-    font-weight: bold;
-    padding: 5px 15px;
-    border-radius: 29px;
-    font-size: 0.8rem;
-  }
-  
-  .produto-imagem {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-  }
-  
-  .categoria {
-    color: #777;
-    font-size: 0.8rem;
-    margin: 0;
-  }
-  
-  .nome {
-    font-size: 1.5rem;
-    color: #474747;
-    margin: 5px 0 10px;
-  }
-  
-  .preco-antigo {
-    text-decoration: line-through;
-    color: #8F8F8F;
-    font-size: 1.5rem;
-    margin-right: 5px;
-    display: inline-block;
+  padding: 20px;
 }
 
-.preco-novo {
-    font-size: 1.5rem;
-    color: #1F1F1F;
-    font-weight: bold;
-    display: inline-block;
-  }
-  
+.produtos-em-alta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.produtos-em-alta h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-left: 6.25rem;
+}
+
+.ver-todos {
+  color: #c92071;
+  text-decoration: none;
+  font-size: 1.125rem;
+  margin-right: 6.25rem;
+}

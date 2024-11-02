@@ -13,7 +13,7 @@ export const Home = () => {
         <header>
             <Nav />
         </header>
-        <main>
+        <main className="mainHome">
             <SectionCarrosel />
             <SectionColecaoDestaque />
             <SectionProdutosAlta />

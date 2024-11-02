@@ -6,16 +6,18 @@
 }
 
 .sapatoCarrosel{
-    width: 733.51px;
+    height: 650px;
+    width: auto;
     animation: subirDescer 2s ease-in-out infinite; 
 }
 
 .divSapatoCarrosel{
     transition: 0.5s;
+    height: 100%;
 }
 
 .divSapatoCarrosel:hover{
-    transform: rotate(-19.34deg);
+    transform: rotate(19.34deg);
     transition: 0.5s;
 }
 

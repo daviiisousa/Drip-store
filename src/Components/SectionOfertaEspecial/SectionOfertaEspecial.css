@@ -3,6 +3,8 @@
     gap: 68px;
     align-items: center;
     justify-content: center;
+    background-color: #ffff;
+    padding: 50px;
 }
 
 .circle{
@@ -20,10 +22,7 @@
 .circleImg {
     width: 35.8125rem;
     height: 20.6255rem;
-    top: -1.25rem;
-    left: 1.25rem;
     object-fit: cover;
-
 }
 
 .h1OfertaEspacial{
@@ -42,4 +41,8 @@ width: 589px;
 height: 112px;
 line-height: 28px;
 margin-top: 20px;
+}
+
+.divTextosOferta{
+    margin-left: 68px;
 }
