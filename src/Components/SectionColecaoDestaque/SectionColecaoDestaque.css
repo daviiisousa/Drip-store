@@ -5,24 +5,26 @@
   justify-content: center;
   /* max-width: 1800px; */
   display: flex;
+  padding: 1.3rem 5.6rem;
 }
 
-.colecao-header h2 {
+.colecao-header {
   color: #333;
   align-items: center;
   width: 100%;
-  margin-left: 1em;
+  padding-bottom: 1.25rem;
+  /* margin-left: 1em; */
 }
 
 .produto-colecao {
   justify-content: center;
   display: flex;
   gap: 2rem;
-  padding: 1.3rem;
 }
 
-.colecao-icon-head h2 {
-  padding-bottom: 2rem;
+.colecao-icon-head {
+  padding-bottom: 1.25rem;
+  padding-top: 6.25rem;
   text-align: center;
 }
 
