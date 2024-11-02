@@ -4,6 +4,7 @@ import { SectionCarrosel } from "../../Components/SectionCarrosel/SectionCarrose
 import { SectionColecaoDestaque } from "../../Components/SectionColecaoDestaque/SectionColecaoDestaque";
 import { SectionOfertaEspecial } from "../../Components/SectionOfertaEspecial/SectionOfertaEspecial";
 import { SectionProdutosAlta } from "../../Components/SectionProdutosAlta/SectionProdutosAlta";
+import { Header } from "../../Components/Header/Header";
 import "./Home.css";
 
 export const Home = () => {
@@ -11,7 +12,7 @@ export const Home = () => {
     <>
       <body>
         <header>
-            <Nav />
+            <Header />
         </header>
         <main className="mainHome">
             <SectionCarrosel />
