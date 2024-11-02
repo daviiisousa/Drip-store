@@ -4,6 +4,7 @@
 - Thiago
 - Victor Rodrigues
 - RhuannSilv
+- cauan
 
 ## Descrição do Projeto
 
