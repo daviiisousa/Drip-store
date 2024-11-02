@@ -1,5 +1,4 @@
 import { Footer } from "../../Components/Footer/Footer";
-import { Nav } from "../../Components/Nav/Nav";
 import { SectionCarrosel } from "../../Components/SectionCarrosel/SectionCarrosel";
 import { SectionColecaoDestaque } from "../../Components/SectionColecaoDestaque/SectionColecaoDestaque";
 import { SectionOfertaEspecial } from "../../Components/SectionOfertaEspecial/SectionOfertaEspecial";
