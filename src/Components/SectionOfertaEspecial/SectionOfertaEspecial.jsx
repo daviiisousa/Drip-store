@@ -7,7 +7,7 @@ export const SectionOfertaEspecial = () => {
     <>
       <section className="Ofertaescpecial">
         <div className="circle">
-          <img className="circleImg" src={SapatoEspecial} alt="" />
+          <img className="circleImg" src={SapatoEspecial} alt="Sapato Nike" />
         </div>
         <div className="divTextosOferta">
           <h1 className="h1OfertaEspacial">Oferta especial</h1>
@@ -23,7 +23,9 @@ export const SectionOfertaEspecial = () => {
             aliquip
           </p>
 
-          <BtnPrimary texto={"ver oferta"} />
+          <BtnPrimary>
+            <a className="linkVerOfertas" href="#ProdutosEmAlta">Ver Oferta</a>
+          </BtnPrimary>
         </div>
       </section>
     </>

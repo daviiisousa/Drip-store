@@ -13,7 +13,18 @@
   letter-spacing: 0.75px;
 }
 
-.active {
+/* .active {
+  font-weight: 700;
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+} */
+
+.navLink{
+  text-decoration: none;
+  color: var( --dark-gray-2);
+}
+
+.navLink:hover{
   font-weight: 700;
   color: var(--primary);
   border-bottom: 2px solid var(--primary);

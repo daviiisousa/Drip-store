@@ -10,7 +10,7 @@ import { Nav } from "../Nav/Nav"
 
 export const Header = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} >
       <div className={styles.topSection}>
         <div className={styles.menu}>
           <img src={iconmenu} alt="Menu"/>

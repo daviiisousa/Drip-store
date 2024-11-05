@@ -1,0 +1,32 @@
+.carroselOferta{
+    color: var(--warning);
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+}
+
+.carroselTitulo{
+    font-weight: 800;
+    font-size: 4rem;
+    margin-bottom: 1.25rem;
+    line-height: 4.125rem;
+}
+
+.descricaoCarrosel{
+    color: var(--dark-gray-2);
+    font-size: 1.125rem;
+    line-height: 2.125rem;
+    margin-bottom: 2.5rem;
+}
+
+.divTextosCarrosel{
+    width: 50%;
+}
+
+.divBtnCarrosel :first-child{
+    width: 13.75rem;
+}
+
+.linkVerOfertas{
+    text-decoration: none;
+    color: var(--light-gray-3);
+}
