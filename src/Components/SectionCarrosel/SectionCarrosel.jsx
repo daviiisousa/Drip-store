@@ -23,6 +23,7 @@ export const SectionCarrosel = () => {
           delay: 5000,
           disableOnInteraction: false,
         }}
+        loop={true}
       >
         <SwiperSlide>
           <section className="sectionCarrosel">
