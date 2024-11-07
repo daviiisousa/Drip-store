@@ -1,5 +1,7 @@
 import { Footer } from "../../Components/Footer/Footer";
 import { Header } from "../../Components/Header/Header";
+import { ProdutoCard } from "../../Components/ProdutoCard/ProdutoCard";
+import { SectionProdutos } from "../../Components/SectionProdutos/SectionProdutos";
 import './Product.css'
 
 export const Product = () => {
@@ -9,8 +11,8 @@ export const Product = () => {
         <header>
           <Header />
         </header>
-        <main>
-          <h1>hello world</h1>
+        <main className="mainProduct">
+          <SectionProdutos />
         </main>
         <footer>
           <Footer />

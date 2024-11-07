@@ -1,0 +1,9 @@
+.divProduto{
+    display: flex;
+}
+
+.filtro{
+    width: 500px;
+    border: 2px solid;
+    height: 500px;
+}
