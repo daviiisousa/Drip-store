@@ -17,7 +17,12 @@ export const SectionCarrosel = () => {
   return (
     <>
       <Swiper
-        pagination={true}
+        pagination={{
+          clickable: false,
+          renderBullet: (index, bullet) => {
+            return `<span class="${bullet}" style="background-color: #C92071; font-size: 50px;"></span>`;
+          },
+        }}
         modules={[Pagination, Autoplay]}
         autoplay={{
           delay: 5000,
