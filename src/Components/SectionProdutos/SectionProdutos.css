@@ -1,9 +1,38 @@
+.divProdutoTextos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+.divProdutoTextos > h2{
+    font-size: 16px;
+}
+
 .divProduto{
     display: flex;
 }
 
+.spanProdutos{
+    font-weight: 400;
+}
+
+.divProdutoTextos > select{
+    background-color: #ff000000;
+    padding: 16px;
+    border-radius: 4px;
+}
+
 .filtro{
-    width: 500px;
+    width: 50%;
     border: 2px solid;
     height: 500px;
+    margin-left: 100px;
+    margin-right: 28px;
+    background-color: #FFFFFF;
+}
+
+.Produtos{
+
+    margin-right: 100px;
 }
