@@ -12,6 +12,7 @@
     box-shadow: 1px var(--light-gray-3);
     transition: transform 0.2s ease;
     margin-bottom: 40px;
+    margin: 20px 0px;
   }
   
   .produto:hover {
