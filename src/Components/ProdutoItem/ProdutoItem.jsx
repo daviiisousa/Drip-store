@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './ProdutoItem.css'
 
 export const ProdutoItem = ({nome,
@@ -10,6 +11,7 @@ export const ProdutoItem = ({nome,
 }) => {
   return (
     <>
+      <Link className='LinkProdutos' to={'/produtosDetalhes'}>
       <div className="Produto" {...props}>
         {desconto && <div className="desconto">{desconto}% OFF</div>}
         <div className="divImagen">
@@ -20,6 +22,7 @@ export const ProdutoItem = ({nome,
         <p className="preco-antigo">${precoAntigo}</p>
         <p className="preco-novo">${precoNovo}</p>
       </div>
+      </Link>
     </>
   );
 };
