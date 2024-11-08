@@ -1,7 +1,6 @@
 import { Footer } from "../../Components/Footer/Footer";
 import { Header } from "../../Components/Header/Header";
-import { ProdutoCard } from "../../Components/ProdutoCard/ProdutoCard";
-import { SectionProdutos } from "../../Components/SectionProdutos/SectionProdutos";
+import { SectionProdutos } from "../../Components/Sections/SectionProdutos/SectionProdutos";
 import './Product.css'
 
 export const Product = () => {
