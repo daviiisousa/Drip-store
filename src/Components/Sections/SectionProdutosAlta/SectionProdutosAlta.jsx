@@ -1,5 +1,5 @@
 import "./SectionProdutosAlta.css";
-import { ProdutoCard } from "../ProdutoCard/ProdutoCard";
+import { ProdutoCard } from "../../ProdutoCard/ProdutoCard";
 import { Link } from "react-router-dom";
 
 export const SectionProdutosAlta = () => {

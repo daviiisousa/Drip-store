@@ -9,8 +9,9 @@ export const ProdutoCard = () => {
       try {
         const response = await fetch("http://localhost:3000/users/");
         const data = await response.json();
+        const produtoLimitado = data.splice(0, 8)
         console.log(data);
-        setProdutos(data);
+        setProdutos(produtoLimitado);
       } catch (error) {
         console.error("Erro ao buscar produtos:", error);
       }

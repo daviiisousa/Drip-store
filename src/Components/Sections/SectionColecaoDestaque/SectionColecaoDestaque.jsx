@@ -1,13 +1,13 @@
-import CardColecaoDestaque from "../CardColecaoDestaque/CardColecaoDestaque";
-import IconsColecao from "../IconsColeção/IconsColecao";
+import CardColecaoDestaque from "../../CardColecaoDestaque/CardColecaoDestaque.jsx";
+import IconsColecao from "../../IconsColeção/IconsColecao.jsx";
 
 import "./SectionColecaoDestaque.css";
-import CamisaDestaque from "../../assets/HomeFotos/CamisaDestaque.png";
-import SapatoDestaque from "../../assets/HomeFotos/SapatoDestaque.png";
-import FoneDestaque from "../../assets/HomeFotos/FoneDestaque.png";
-import Camisa from "../../assets/IconsColecao/camisa.jsx";
-import Calça from "../../assets/IconsColecao/calça.jsx";
-import Tenis from "../../assets/IconsColecao/tenis.jsx";
+import CamisaDestaque from "../../../assets/HomeFotos/CamisaDestaque.png";
+import SapatoDestaque from "../../../assets/HomeFotos/SapatoDestaque.png";
+import FoneDestaque from "../../../assets/HomeFotos/FoneDestaque.png";
+import Camisa from "../../../assets/IconsColecao/tenis.jsx";
+import Calça from "../../../assets/IconsColecao/calça.jsx";
+import Tenis from "../../../assets/IconsColecao/tenis.jsx";
 
 export const SectionColecaoDestaque = () => {
   return (

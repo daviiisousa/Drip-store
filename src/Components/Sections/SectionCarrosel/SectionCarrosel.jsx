@@ -1,17 +1,17 @@
 import "./SectionCarrosel.css";
-import { DivFotosCarrosel } from "../DivFotosCarrosel/DivFotosCarrosel";
+import { DivFotosCarrosel } from "../../DivFotosCarrosel/DivFotosCarrosel";
 
-import sapatoPadrao from "../../assets/HomeFotos/Sapatocarrosel.png";
-import sapatoBlack from "../../assets/HomeFotos/black-sneaker.png";
-import sapatoBrow from "../../assets/HomeFotos/brown-sneaker.png";
-import sapatoPurple from "../../assets/HomeFotos/purple-sneaker.png";
+import sapatoPadrao from "../../../assets/HomeFotos/Sapatocarrosel.png";
+import sapatoBlack from "../../../assets/HomeFotos/black-sneaker.png";
+import sapatoBrow from "../../../assets/HomeFotos/brown-sneaker.png";
+import sapatoPurple from "../../../assets/HomeFotos/purple-sneaker.png";
 
 //swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { TextosCarrosel } from "../TextosCarrosel/TextosCarrosel";
+import { TextosCarrosel } from "../../TextosCarrosel/TextosCarrosel";
 
 export const SectionCarrosel = () => {
   return (
