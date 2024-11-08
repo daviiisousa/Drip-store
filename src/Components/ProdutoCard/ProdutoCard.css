@@ -5,7 +5,7 @@
     gap: 24px;
   }
   
-  .produto {
+  .Produto {
     background-color: #f8f9fd;
     text-align: left;
     position: relative;
@@ -15,7 +15,7 @@
     margin: 20px 0px;
   }
   
-  .produto:hover {
+  .Produto:hover {
     transform: scale(1.03);
   }
   

@@ -1,24 +1,12 @@
+import { ProductContext } from "../../context/ProductContext";
 import "./ProdutoCard.css";
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 
-export const ProdutoCard = ({...props}) => {
-  const [produtos, setProdutos] = useState([]);
+export const ProdutoCard = () => {
 
-  useEffect(() => {
-    const fetchProdutos = async () => {
-      try {
-        const response = await fetch("http://localhost:3000/users/");
-        const data = await response.json();
-        const produtolimite = data.slice(0, 8)
-        console.log(data);
-        setProdutos(produtolimite);
-      } catch (error) {
-        console.error("Erro ao buscar produtos:", error);
-      }
-    };
+  const {produtos} = useContext(ProductContext)
 
-    fetchProdutos();
-  }, []);
+  const produtosLimitados = produtos.slice(0, 8)
 
   const ProdutoItem = ({
     nome,
@@ -28,11 +16,9 @@ export const ProdutoCard = ({...props}) => {
     desconto,
     imagem,
   }) => (
-    <div className="produto">
+    <div className="Produto">
       {desconto && <div className="desconto">{desconto}% OFF</div>}
-      <div className="divImagen">
-        <img src={imagem} alt={nome} className="produto-imagem" />
-      </div>
+      <div className="divImagen"><img src={imagem} alt={nome} className="produto-imagem" /></div>
       <p className="categoria">{categoria}</p>
       <p className="nome">{nome}</p>
       <p className="preco-antigo">${precoAntigo}</p>
@@ -41,8 +27,8 @@ export const ProdutoCard = ({...props}) => {
   );
 
   return (
-    <div className="produtos" {...props}>
-      {produtos.map((produto) => (
+    <div className="produtos">
+      {produtosLimitados.map((produto) => (
         <ProdutoItem
           key={produto.id}
           nome={produto.nome}
