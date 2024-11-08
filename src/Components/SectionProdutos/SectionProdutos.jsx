@@ -15,9 +15,9 @@ export const SectionProdutos = () => {
                     <aside className="filtro">
                         <h1>filtro</h1>
                     </aside>
-                    <div className="Produtos">
-                        <ProdutoCard />
-                        <ProdutoCard />
+                    <div className="Produtos" >
+                        <ProdutoCard style={{gridTemplateColumns: "repeat(3, 1fr)"}}/>
+                        {/* <ProdutoCard style={{gridTemplateColumns: "repeat(3, 1fr)"}}/> */}
                     </div>
                 </div>
             </section>

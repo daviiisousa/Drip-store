@@ -1,7 +1,7 @@
 import "./ProdutoCard.css";
 import { useEffect, useState } from "react";
 
-export const ProdutoCard = () => {
+export const ProdutoCard = ({...props}) => {
   const [produtos, setProdutos] = useState([]);
 
   useEffect(() => {
@@ -9,8 +9,9 @@ export const ProdutoCard = () => {
       try {
         const response = await fetch("http://localhost:3000/users/");
         const data = await response.json();
+        const produtolimite = data.slice(0, 8)
         console.log(data);
-        setProdutos(data);
+        setProdutos(produtolimite);
       } catch (error) {
         console.error("Erro ao buscar produtos:", error);
       }
@@ -40,7 +41,7 @@ export const ProdutoCard = () => {
   );
 
   return (
-    <div className="produtos">
+    <div className="produtos" {...props}>
       {produtos.map((produto) => (
         <ProdutoItem
           key={produto.id}
