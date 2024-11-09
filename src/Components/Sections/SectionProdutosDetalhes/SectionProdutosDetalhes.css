@@ -1,10 +1,29 @@
 .sectionDetails{
     display: flex;
-    background-color: #F9F8FE;
-    padding: 82px 100px;
 }
 
 .carroselDetails{
     width: 60%;
+    margin-bottom: 80px;
+}
+
+.divTextos{
+    display: flex;
+    flex-direction: column;
+}
+
+.purple{
     background-color: #E2E3FF;
+}
+
+.black{
+    background-color: #5E5E5E;
+}
+
+.red{
+    background-color: #FFC0BC;
+}
+
+.brow{
+    background-color: #DEC699;
 }
