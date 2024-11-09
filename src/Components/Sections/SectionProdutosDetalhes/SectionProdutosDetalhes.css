@@ -1,0 +1,10 @@
+.sectionDetails{
+    display: flex;
+    background-color: #F9F8FE;
+    padding: 82px 100px;
+}
+
+.carroselDetails{
+    width: 60%;
+    background-color: #E2E3FF;
+}
