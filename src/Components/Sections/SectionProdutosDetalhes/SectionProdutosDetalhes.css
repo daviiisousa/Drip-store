@@ -10,20 +10,128 @@
 .divTextos{
     display: flex;
     flex-direction: column;
+    margin-left: 40px;
+}
+
+.textoDetalhes > h1{
+    font-size: 32px;
+    width: 440px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.marcaSapato{
+    color: var(--dark-gray-3);
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+
+.starts{
+    margin-bottom: 25px;
+}
+
+.fullStar{
+    color: var(--warning);
+    height: 14px;
+}
+
+.emptyStar{
+    color: var(--warning);
+    height: 14px;
+}
+
+.preco{
+    color: var(--dark-gray-2);
+    margin-bottom: 20px;
+}
+
+.precoNumero{
+    font-size: 36px;
+    font-weight: 700;
+    color: #1F1F1F;
+}
+
+.tituloDescricaoProduto{
+    font-size: 22px;
+    color: var(--light-gray);
+    letter-spacing: 0.75px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.descricaoProduto{
+    color: var(--dark-gray-2);
+    line-height: 22px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.divTamanhos{
+    margin-bottom: 10px;
+}
+
+.divTamanhos > h2{
+    color: var(--light-gray);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.tamanhos{
+    display: flex;
+    gap: 10px;
+}
+
+.tamanhoNumero{
+    padding: 12px;
+    border: 1px solid var(--light-gray-2); 
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.tamanhoNumero:active{
+    background-color: var(--primary);
+}
+
+.tamanhoNumero:hover{
+    background-color: var(--primary);
+    color: white;
+    border: 1px solid var(--primary);
+    transition: 0.5s;
+}
+
+.cores{
+    margin: 20px 0px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+input[type="radio"] {
+    transform: scale(2.5); /* Aumenta o tamanho do botão */
 }
 
 .purple{
     background-color: #E2E3FF;
+    accent-color: #E2E3FF;
 }
 
 .black{
     background-color: #5E5E5E;
+    accent-color: #5E5E5E;
 }
 
 .red{
     background-color: #FFC0BC;
+    accent-color: #FFC0BC;
 }
 
 .brow{
     background-color: #DEC699;
+    accent-color: #DEC699;
 }
