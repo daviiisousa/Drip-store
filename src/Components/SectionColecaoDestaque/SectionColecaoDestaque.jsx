@@ -8,6 +8,8 @@ import FoneDestaque from "../../assets/HomeFotos/FoneDestaque.png";
 import Camisa from "../../assets/IconsColecao/camisa.jsx";
 import Calça from "../../assets/IconsColecao/calça.jsx";
 import Tenis from "../../assets/IconsColecao/tenis.jsx";
+import Headphone from "../../assets/IconsColecao/headphone.jsx";
+import Bone from "../../assets/IconsColecao/bone.jsx";
 
 export const SectionColecaoDestaque = () => {
   return (
@@ -52,11 +54,11 @@ export const SectionColecaoDestaque = () => {
           </IconsColecao>
 
           <IconsColecao label="Bonés">
-            <Camisa />
+            <Bone />
           </IconsColecao>
 
           <IconsColecao label="Headphones">
-            <Camisa />
+            <Headphone />
           </IconsColecao>
 
           <IconsColecao label="Tênis">
