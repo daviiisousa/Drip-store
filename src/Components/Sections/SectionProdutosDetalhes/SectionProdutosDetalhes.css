@@ -93,15 +93,24 @@
     transition: 0.5s;
 }
 
-.tamanhoNumero:active{
-    background-color: var(--primary);
-}
-
 .tamanhoNumero:hover{
     background-color: var(--primary);
     color: white;
     border: 1px solid var(--primary);
     transition: 0.5s;
+}
+
+.tamanhoNumero:focus{
+    background-color: var(--primary);
+    color: white;
+    border: 1px solid var(--primary);
+    transition: 0.5s;
+}
+
+.divCores > h2{
+    color: var(--light-gray);
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .cores{
@@ -112,7 +121,7 @@
     margin-left: 10px;
 }
 
-input[type="radio"] {
+.cores input[type="radio"] {
     transform: scale(2.5); /* Aumenta o tamanho do botão */
 }
 
