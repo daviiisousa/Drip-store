@@ -1,0 +1,71 @@
+.divProdutoTextos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+.divProdutoTextos > h2{
+    font-size: 16px;
+}
+
+.divProduto{
+    display: flex;
+}
+
+.spanProdutos{
+    font-weight: 400;
+}
+
+.divProdutoTextos > select{
+    background-color: #ff000000;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.filtro{
+    width: 50%;
+    padding: 30px;
+    border-radius: 4px;
+    height: 700px;
+    color: var(--dark-gray-2);
+    margin-left: 100px;
+    margin-right: 28px;
+    background-color: #FFFFFF;
+}
+
+.filtro > h1{
+    font-size: 16px;
+    letter-spacing: 0.75px;
+    margin-bottom: 20px;
+}
+
+.filtro > hr {
+    margin-bottom: 20px;
+}
+
+.Filtro{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    accent-color: #C92071; 
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+input[type="radio"] {
+    accent-color: #C92071; 
+    padding: 10px;
+}
+
+.Filtro  h2{
+    font-size: 14px;
+}
+
+.Filtro  label{
+    margin-left: 10px;
+}

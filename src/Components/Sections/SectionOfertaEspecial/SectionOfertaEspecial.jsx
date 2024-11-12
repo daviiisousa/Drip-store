@@ -1,6 +1,6 @@
 import "./SectionOfertaEspecial.css";
-import SapatoEspecial from "../../assets/HomeFotos/SapatoEspecial.png";
-import { BtnPrimary } from "../Buotoes/BtnPrimary/BtnPrimary";
+import SapatoEspecial from "../../../assets/HomeFotos/SapatoEspecial.png";
+import { BtnPrimary } from "../../Buotoes/BtnPrimary/BtnPrimary";
 
 export const SectionOfertaEspecial = () => {
   return (

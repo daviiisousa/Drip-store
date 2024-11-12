@@ -1,28 +1,34 @@
 import "./SectionCarrosel.css";
-import { DivFotosCarrosel } from "../DivFotosCarrosel/DivFotosCarrosel";
+import { DivFotosCarrosel } from "../../DivFotosCarrosel/DivFotosCarrosel";
 
-import sapatoPadrao from "../../assets/HomeFotos/Sapatocarrosel.png";
-import sapatoBlack from "../../assets/HomeFotos/black-sneaker.png";
-import sapatoBrow from "../../assets/HomeFotos/brown-sneaker.png";
-import sapatoPurple from "../../assets/HomeFotos/purple-sneaker.png";
+import sapatoPadrao from "../../../assets/HomeFotos/Sapatocarrosel.png";
+import sapatoBlack from "../../../assets/HomeFotos/black-sneaker.png";
+import sapatoBrow from "../../../assets/HomeFotos/brown-sneaker.png";
+import sapatoPurple from "../../../assets/HomeFotos/purple-sneaker.png";
 
 //swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { TextosCarrosel } from "../TextosCarrosel/TextosCarrosel";
+import { TextosCarrosel } from "../../TextosCarrosel/TextosCarrosel";
 
 export const SectionCarrosel = () => {
   return (
     <>
       <Swiper
-        pagination={true}
+        pagination={{
+          clickable: false,
+          renderBullet: (index, bullet) => {
+            return `<span class="${bullet}" style="background-color: #C92071; font-size: 50px;"></span>`;
+          },
+        }}
         modules={[Pagination, Autoplay]}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
         }}
+        loop={true}
       >
         <SwiperSlide>
           <section className="sectionCarrosel">

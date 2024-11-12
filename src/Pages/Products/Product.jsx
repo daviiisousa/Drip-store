@@ -1,5 +1,6 @@
 import { Footer } from "../../Components/Footer/Footer";
 import { Header } from "../../Components/Header/Header";
+import { SectionProdutos } from "../../Components/Sections/SectionProdutos/SectionProdutos";
 import './Product.css'
 
 export const Product = () => {
@@ -9,8 +10,8 @@ export const Product = () => {
         <header>
           <Header />
         </header>
-        <main>
-          <h1>hello world</h1>
+        <main className="mainProduct">
+          <SectionProdutos />
         </main>
         <footer>
           <Footer />
