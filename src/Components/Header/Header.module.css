@@ -56,22 +56,26 @@
     cursor: pointer;
     font-size: 14px;
     font-weight: 700;
-    line-height: 22px;
     letter-spacing: 0.75px;
     text-align: center;
     width: 100%;
     background: var(--primary);
-    max-width: 114px;
-    min-height: 40px;
-    border: none;
+    width: 114px;
+    height: 40px;
     border-radius: 8px;
     color: var(--light-gray-3);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .linkRegister {
     color: var(--dark-gray-2);
     min-width: 88px;
 }
+
+
 
 @media (max-width: 900px) {
     .menu {

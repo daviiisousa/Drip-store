@@ -7,6 +7,7 @@ import iconmenu from "../../assets/Icons/Menu.svg"
 import logo from "../../assets/HomeFotos/LogoDg.png"
 
 import { Nav } from "../Nav/Nav"
+import { Link } from "react-router-dom"
 
 export const Header = () => {
   return (
@@ -22,7 +23,9 @@ export const Header = () => {
         <div className={styles.containerSearchAndRegister}>
           <HeaderSearchInput />
           <a href="#" className={styles.linkRegister}>Cadastre-se</a>
-          <button type="submit" className={styles.buttonLogin}>Entrar</button>
+          <Link className={styles.buttonLogin} to={'/login'}>
+          Entrar
+          </Link>
         </div>
         <HeaderShoppingCart notificationCount={Math.floor(Math.random() * 4)} />
       </div>
