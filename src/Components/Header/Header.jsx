@@ -4,10 +4,10 @@ import { HeaderSearchInput } from "../HeaderSearchInput/HeaderSearchInput"
 import styles from "./Header.module.css"
 
 import iconmenu from "../../assets/Icons/Menu.svg"
-import logo from "../../assets/HomeFotos/LogoDg.png"
 
 import { Nav } from "../Nav/Nav"
 import { Link } from "react-router-dom"
+import { Logo } from "../Logo/Logo"
 
 export const Header = () => {
   return (
@@ -17,8 +17,7 @@ export const Header = () => {
           <img src={iconmenu} alt="Menu"/>
         </div>
         <div style={{ cursor: "pointer" }}>
-          <img src={logo} alt="Logo"className={styles.imgLogo}/>
-          <span className={styles.title}>Digital Store</span>
+         <Logo />
         </div>
         <div className={styles.containerSearchAndRegister}>
           <HeaderSearchInput />
