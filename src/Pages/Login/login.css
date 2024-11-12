@@ -1,0 +1,136 @@
+.headerLogin{
+  padding: 25px;
+  margin-left: 100px;
+}
+
+.linkLogin{
+  text-decoration: none;
+}
+
+.logo{
+  margin-left: 5px;
+  font-size: 36.4px;
+  font-weight: 600;
+  line-height: 44.05px;
+  letter-spacing: -0.01em;
+  color: var(--primary);
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #d4c3fc, #f1e3ff);
+}
+
+.login-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 4px;
+  width: 583px;
+  height: 560px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.login-container > h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.paragrafoLogin {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.forgot-password {
+  color: #ff3388;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.labelLogin {
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+.inputLogin {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #eeecec;
+}
+
+.forgot-password {
+  font-size: 12px;
+  color: #000000;
+  text-decoration: underline;
+  text-align: left;
+}
+
+.login-button {
+  background-color: #c92071;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #c92071;
+}
+
+.login-options {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+}
+
+.social-login {
+  text-align: center;
+  flex-direction: row;
+}
+
+.social-login img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.image-container {
+  margin-left: 20px;
+}
+
+.shoes-image {
+  width: 300px;
+  height: auto;
+}
+
+.image1 {
+  margin-bottom: 6.6rem;
+}
+
+.image2 {
+  transform: rotate(8deg);
+  padding: -30px;
+}
