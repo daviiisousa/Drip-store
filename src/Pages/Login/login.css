@@ -1,0 +1,152 @@
+.headerLogin{
+  padding: 25px;
+  margin-left: 120px;
+}
+
+.linkLogin{
+  text-decoration: none;
+}
+
+.logo{
+  margin-left: 5px;
+  font-size: 36.4px;
+  font-weight: 600;
+  line-height: 44.05px;
+  letter-spacing: -0.01em;
+  color: var(--primary);
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #d4c3fc, #f1e3ff);
+}
+
+.login-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 4px;
+  width: 583px;
+  height: 560px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-left: 120px;
+}
+
+.login-container > h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.paragrafoLogin {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+.paragrafoLogin a {
+  color: #c92071;
+}
+
+.forgot-password {
+  color: #ff3388;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+
+}
+
+.labelLogin {
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  margin-top: 16px;
+
+}
+
+.inputLogin {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #eeecec;
+}
+
+.forgot-password {
+  font-size: 15px;
+  color: #000000;
+  text-decoration: underline;
+  text-align: left;
+  margin: 22px 0 22px 0
+}
+
+.login-button {
+  background-color: #c92071;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #c92071;
+}
+
+.login-options {
+  /* margin-top: 10px; */
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+}
+
+.social-login {
+  text-align: center;
+  /* flex-direction: row; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.social-login2 {
+  width: 24px;
+  height: 24px;
+  margin: 15px 13px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+}
+
+.image-container {
+  margin-left: 5rem;
+  position: relative;
+}
+
+.shoes-image {
+  width: 350px;
+  height: auto;
+}
+
+.image1 {
+  margin-bottom: 6.6rem;
+}
+
+.image2 {
+  transform: rotate(8deg);
+  position: relative;
+  right: 6rem;
+}
