@@ -11,7 +11,7 @@ import sapatoPurple from "../../../assets/HomeFotos/purple-sneaker.png";
 import { Navigation, Pagination } from "swiper/modules";
 import { BtnWarning } from "../../Buotoes/BtnWarning/BtnWarning";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ProductContext } from "../../../context/ProductContext";
 import { ProdutoItem } from "../../ProdutoItem/ProdutoItem";
 import { FaStar } from "react-icons/fa";
@@ -20,6 +20,12 @@ import { CiStar } from "react-icons/ci";
 export const SectionProdutosDetalhes = () => {
   const { produtos } = useContext(ProductContext);
   const produtosLimitados = produtos.slice(0, 4);
+
+  const [selectedSize, setSelectedSize] = useState(null);
+
+  const handleClick = (size) => {
+    setSelectedSize(size);
+  };
 
   return (
     <>
@@ -88,11 +94,18 @@ export const SectionProdutosDetalhes = () => {
           <div className="divTamanhos">
             <h2>Tamanho</h2>
             <div className="tamanhos">
-              <span className="tamanhoNumero">39</span>
-              <span className="tamanhoNumero">40</span>
-              <span className="tamanhoNumero">41</span>
-              <span className="tamanhoNumero">42</span>
-              <span className="tamanhoNumero">43</span>
+              {[39, 40, 41, 42, 43].map((size) => (
+                <span
+                  key={size}
+                  onClick={() => handleClick(size)}
+                  style={{
+                    backgroundColor: selectedSize === size ? "#c92071" : "",
+                  }}
+                  className="tamanhoNumero"
+                >
+                  {size}
+                </span>
+              ))}
             </div>
           </div>
           <div className="divCores">
@@ -101,10 +114,15 @@ export const SectionProdutosDetalhes = () => {
               <input className="corInput red" type="radio" name="cor" id="" />
               <input className="corInput black" type="radio" name="cor" id="" />
               <input className="corInput brow" type="radio" name="cor" id="" />
-              <input className="corInput purple" type="radio" name="cor" id="" />
+              <input
+                className="corInput purple"
+                type="radio"
+                name="cor"
+                id=""
+              />
             </div>
           </div>
-          <Link to={'/compraDetalhes'} className="btn-container">
+          <Link to={"/compraDetalhes"} className="btn-container">
             <BtnWarning texto={"Comprar"} />
           </Link>
         </div>
