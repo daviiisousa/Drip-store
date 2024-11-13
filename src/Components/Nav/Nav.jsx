@@ -24,8 +24,8 @@ export const Nav = () => {
       ))} */}
       <Link className={styles.navLink} to={"/"}>Home</Link>
       <Link className={styles.navLink} to={"/produtos"}>Produtos</Link>
-      <Link className={styles.navLink}>Categorias</Link>
-      <Link className={styles.navLink}>Meus Pedidos</Link>
+      <Link className={styles.navLink} >Categorias</Link>
+      <Link className={styles.navLink} to={'/meusPedidos'}>Meus Pedidos</Link>
     </div>
   );
 };

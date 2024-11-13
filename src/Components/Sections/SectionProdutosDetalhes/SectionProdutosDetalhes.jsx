@@ -104,9 +104,9 @@ export const SectionProdutosDetalhes = () => {
               <input className="corInput purple" type="radio" name="cor" id="" />
             </div>
           </div>
-          <div className="btn-container">
+          <Link to={'/compraDetalhes'} className="btn-container">
             <BtnWarning texto={"Comprar"} />
-          </div>
+          </Link>
         </div>
       </section>
       <div className="produtos-em-alta-header">
