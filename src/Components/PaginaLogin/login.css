@@ -46,14 +46,18 @@
   .login-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 17px;
     margin-top: 20px;
+    font-weight: bold;
+    
+  
   }
   
   label {
     font-size: 14px;
     color: #333;
     text-align: left;
+    margin-top: 16px;
   }
   
   input {
@@ -65,10 +69,11 @@
   }
   
   .forgot-password {
-    font-size: 12px;
+    font-size: 15px;
     color: #000000;
     text-decoration: underline;
     text-align: left;
+    margin: 22px 0 22px 0
   }
   
   .login-button {
@@ -102,7 +107,7 @@
   .social-login img {
     width: 24px;
     height: 24px;
-    margin: 0 10px;
+    margin: 5px 13px;
     cursor: pointer;
     text-align: center;
 
@@ -110,20 +115,24 @@
   
   .image-container {
     margin-left: 20px;
+    position: relative;
   }
   
   .shoes-image {
-    width: 300px;
+    width: 350px;
     height: auto;
+
   }
 
   .image1 {
     margin-bottom: 6.6rem;
 
+
   }
 
   .image2 {
     transform: rotate(8deg);
-    padding: -30px;
-
+    position: relative;
+    right: 6rem;
+    
   }
