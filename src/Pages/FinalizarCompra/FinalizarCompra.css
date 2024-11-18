@@ -14,3 +14,33 @@
     padding: 30px;
     border-radius: 4px;
 }
+
+.tituloInformaçoesPessoais{
+    font-size: 14px;
+    color: var(--dark-gray-2);
+    margin-bottom: 20px;
+}
+
+.h2Informaçoes{
+    margin-bottom: 20px;
+}
+
+.formInformaçoesPessoais{
+    display: flex;
+    flex-direction: column;
+
+    label{
+        margin-bottom: 5px;
+        color: var(--dark-gray-2);
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    input{
+        margin-bottom: 20px;
+        background-color: var(--light-gray-2);
+        padding: 16px 12px;
+        border-radius: 8px;
+        border: none;
+    }
+}

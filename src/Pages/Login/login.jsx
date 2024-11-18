@@ -51,8 +51,8 @@ function Login() {
                 </button>
                 <div className="social-login">
                   <p className="login-options">Ou faça login com</p>
-                  <img src="../../../public/gmail.png" alt="Google" />
-                  <img src="../../../public/facebook.png" alt="Facebook" />
+                  <img className= "social-login2" src="../../../public/gmail.png" alt="Google" />
+                  <img  className= "social-login2" src="../../../public/facebook.png" alt="Facebook" />
                 </div>
               </form>
             </div>
