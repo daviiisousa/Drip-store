@@ -21,7 +21,7 @@ export const Header = () => {
         </div>
         <div className={styles.containerSearchAndRegister}>
           <HeaderSearchInput />
-          <Link to={'/criarConta'} className={styles.linkRegister}>Cadastre-se</Link>
+          <Link className={styles.linkRegister} to= {'/Register'}>Cadastre-se</Link>
           <Link className={styles.buttonLogin} to={'/login'}>
           Entrar
           </Link>
