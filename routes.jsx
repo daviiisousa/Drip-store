@@ -8,6 +8,10 @@ import { CompraDetalhes } from "./src/Pages/CompraDetalhes/CompraDetalhes";
 import { FinalizarCompra } from "./src/Pages/FinalizarCompra/FinalizarCompra";
 import { CriarConta } from "./src/Pages/CriarConta/CriarConta";
 import { MeusPedidos } from "./src/Pages/MeusPedidos/MeusPedidos";
+import Register from "./src/Pages/Register/Register";
+import { ComprarFinalizada } from "./src/Pages/ComprarFinalizada/ComprarFinalizada";
+
+
 
 export const AppRoutes = () => {
   return (
@@ -23,6 +27,8 @@ export const AppRoutes = () => {
             <Route path="/finalizarCompra" element={<FinalizarCompra />}/>
             <Route path="/criarConta" element={<CriarConta />} />
             <Route path="/meusPedidos" element={<MeusPedidos />}/>
+            <Route path="/Register" element={<Register />} />
+            <Route path="/comprarFinalizada" element={<ComprarFinalizada />} />
           </Routes>
         </ProductProvider>
       </BrowserRouter>
