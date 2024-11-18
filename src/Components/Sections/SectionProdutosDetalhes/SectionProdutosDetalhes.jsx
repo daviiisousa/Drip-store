@@ -122,7 +122,7 @@ export const SectionProdutosDetalhes = () => {
               />
             </div>
           </div>
-          <Link to={"/compraDetalhes"} className="btn-container">
+          <Link to={"/compraDetalhes"} >
             <BtnWarning texto={"Comprar"} />
           </Link>
         </div>
