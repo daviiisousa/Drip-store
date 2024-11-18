@@ -12,7 +12,7 @@ export const SectionProdutos = () => {
         <div className="divProdutoTextos">
           <h2>
             Resultados para “Tênis” -
-            <span className="spanProdutos"> 389 produtos</span>
+            <span className="spanProdutos"> {produtos.length} produtos</span>
           </h2>
           <select>
             <option>Ordernar por: mais relevantes</option>
