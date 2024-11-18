@@ -8,6 +8,7 @@
   .iconWrapper {
     position: relative;    
     cursor: pointer;
+    border: 1px solid red;
   }
   
   .notification {
@@ -30,7 +31,14 @@
     cursor: pointer;
     margin-right: 20px;
   }
-  
+
+  .teste{
+    display: none;
+  }
+ .ativo {
+  display: block;
+ }
+
   @media (max-width: 900px) {
     .iconSearch {
       display: flex;
