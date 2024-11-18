@@ -44,3 +44,14 @@
         border: none;
     }
 }
+
+.formaDepagamento{
+    font-size: 12px;
+    color: var(--dark-gray-2);
+    margin-bottom: 20px;
+}
+
+.formTipoCartao{
+    display: flex;
+    gap: 20px;
+}
