@@ -10,7 +10,15 @@ export const MeusPedidos = () => {
         </header>
 
         <main className="mainMeusPedidos">
-          <h1>meus pedidos</h1>
+         <div>
+			<h2>Meu Perfil</h2>
+		  <h2>Meus Pedidos</h2>
+		  <h2>Minhas Informações</h2>
+		  <h2>Métodos de Pagamento</h2>
+		 </div>
+		 <div>
+			
+		 </div>
         </main>
 
         <footer>
