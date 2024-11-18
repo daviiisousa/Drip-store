@@ -1,7 +1,7 @@
 import React from "react";
 import "./login.css";
 import { Footer } from "../../Components/Footer/Footer";
-import logo from "../../assets/HomeFotos/LogoDg.png"
+import { Logo } from "../../Components/Logo/Logo";
 import { Link } from "react-router-dom";
 // import SapatoLogin from "../../assets/HomeFotos/SapatoLogin.png"
 // import SapatoLogin2 from "../../assets/HomeFotos/SapatoLogin2.png"
@@ -13,17 +13,14 @@ function Login() {
     <>
       <body>
         <header className="headerLogin">
-          <Link className="linkLogin" to={'/'}>
-          <img src={logo} alt="Logo" className="imgLogo" />
-          <span className="logo">Digital Store</span>
-          </Link>
+          <Logo />
         </header>
         <main>
           <div className="login-page">
             <div className="login-container">
               <h2>Acesse sua conta</h2>
               <p className="paragrafoLogin">
-                Novo cliente? Então registre-se <a href="#register">aqui</a>.
+                Novo cliente? Então registre-se <Link to={'/criarConta'}>aqui</Link>.
               </p>
               <form className="login-form">
                 <label className="labelLogin" htmlFor="login">
