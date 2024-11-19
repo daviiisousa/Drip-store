@@ -31,13 +31,6 @@
     margin-right: 20px;
   }
 
-  .teste{
-    display: none;
-  }
- .ativo {
-  display: block;
- }
-
   @media (max-width: 900px) {
     .iconSearch {
       display: flex;

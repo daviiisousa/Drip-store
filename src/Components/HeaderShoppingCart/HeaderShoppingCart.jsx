@@ -4,10 +4,10 @@ import styles from './HeaderShoppingCart.module.css';
 import img from "../../assets/HomeFotos/mini-cart.svg"
 
 import { CiSearch } from "react-icons/ci";
-import { useState } from 'react';
+
 
 export const HeaderShoppingCart = ({ notificationCount =  5}) => {
-  const [isActive, setIsActive] = useState(false)
+
 
   return (
   <div className={styles.container}>
@@ -15,7 +15,7 @@ export const HeaderShoppingCart = ({ notificationCount =  5}) => {
       <CiSearch color={"var(--dark-gray-3)"} fontSize={23}/>
     </div>
     <div 
-    onClick={() => setIsActive(!isActive)}
+    
      className={styles.iconWrapper}>
       <img
         src={img}
@@ -27,8 +27,6 @@ export const HeaderShoppingCart = ({ notificationCount =  5}) => {
         </div>
       )}
     </div>
-    <div className={`${styles.teste} ${isActive? styles.ativo : null}`}> 
-      <h2>eae</h2>
-    </div>
+    
   </div>
 )};
