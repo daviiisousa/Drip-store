@@ -8,7 +8,7 @@ export const ProductProvider = ({ children }) => {
   useEffect(() => {
     const fetchProdutos = async () => {
       try {
-        const response = await fetch("http://localhost:3000/users/");
+        const response = await fetch("http://localhost:3000/produto/");
         const data = await response.json();
         console.log(data);
         setProdutos(data);
