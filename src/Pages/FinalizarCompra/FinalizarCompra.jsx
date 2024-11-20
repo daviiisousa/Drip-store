@@ -148,7 +148,9 @@ export const FinalizarCompra = () => {
                   ou 10x de R$ 21,00 sem juros
                 </p>
                 <Link to={'/comprarFinalizada'}>
-                  <BtnWarning style={{width: '100%', marginTop: '20px'}} texto={'Realizar Pagamento'} />
+                  <BtnWarning style={{width: '100%', marginTop: '20px'}}>
+                    Finalizar Pagamento
+                  </BtnWarning>
                 </Link>
               </div>
             </SectionFinalizarCompra>
@@ -189,7 +191,9 @@ export const FinalizarCompra = () => {
                   </p>
               </div>
               <Link to={'/comprarFinalizada'}>
-                <BtnWarning texto={'Realizar Pagamento'} style={{width: '100%'}} />
+                <BtnWarning style={{width: '100%'}}>
+                  Finalizar Pagamento
+                </BtnWarning>
               </Link>
             </SectionFinalizarCompra>
           </section>
