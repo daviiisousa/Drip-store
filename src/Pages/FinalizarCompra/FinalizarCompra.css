@@ -44,7 +44,7 @@
 
   input {
     margin-bottom: 20px;
-    background-color: var(--light-gray-2);
+    background-color: #eeecec;
     padding: 16px 12px;
     border-radius: 8px;
     border: none;
@@ -53,7 +53,7 @@
 
 .inputFinalizarComprar {
   margin: 10px 0px;
-  background-color: var(--light-gray-2);
+  background-color: #eeecec;
   padding: 16px 12px;
   border-radius: 8px;
   border: none;
@@ -62,7 +62,7 @@
 
 .inputCVV {
   margin: 10px 0px;
-  background-color: var(--light-gray-2);
+  background-color: #eeecec;
   padding: 16px 12px;
   border-radius: 8px;
   border: none;
@@ -75,7 +75,6 @@
 }
 
 .labelFinalizarCompra {
-  /* margin-bottom: 20px; */
   color: var(--dark-gray-2);
   font-size: 12px;
   font-weight: 700;
@@ -121,7 +120,7 @@
     font-size: 18px;
 }
 
-.preco{
+.precoResumo{
     font-weight: 700;
     color: var(--error);
     font-size: 18px;
@@ -197,9 +196,9 @@
         font-size: 24px;
         font-weight: 700;
     }
+}
 
-    span{
-        font-size: 24px;
-        font-weight: 700;
-    }
+.spanPrecoTotal{
+  font-size: 24px;
+  font-weight: 700;
 }
