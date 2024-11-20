@@ -142,7 +142,7 @@ export const FinalizarCompra = () => {
                 <hr className="hrInformaçoes" />
                 <div className="divTotalPreco">
                   <h2 className="tituloTotal">Total</h2>
-                  <span className="preco">R$ 219,00</span>
+                  <span className="precoResumo">R$ 219,00</span>
                 </div>
                 <p className="paragrafoPreco">
                   ou 10x de R$ 21,00 sem juros
@@ -182,7 +182,7 @@ export const FinalizarCompra = () => {
               <div className="divPrecoTotal">
                 <div className="PrecoTotal">
                     <h2>Total</h2>
-                    <span>R$ 219,00</span>
+                    <span className="spanPrecoTotal">R$ 219,00</span>
                   </div>
                   <p  className="paragrafoPreco">
                     ou 10x de R$ 21,00 sem juros
