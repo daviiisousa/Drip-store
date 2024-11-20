@@ -1,0 +1,193 @@
+/* Estilos Gerais */
+main {
+  padding: 0rem 1.2rem 0 1.2rem;
+  margin: 0rem 6rem 0;
+}
+
+.content {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.sectioncart {
+  display: flex;
+  flex-direction: column;
+  width: 55.625rem;
+  height: auto;
+  padding: 1.875rem;
+  gap: 1.25rem;
+  border-radius: 0.25rem;
+  background: #e4e4e4;
+}
+
+/* Títulos do Carrinho */
+.titulos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: Inter, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+/* Valores no Carrinho */
+.valores {
+  display: flex;
+  gap: 1.9375rem;
+}
+
+.tbody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product img {
+  border-radius: 6px;
+}
+
+.product .info .titulo {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.productValores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Botões de Quantidade */
+.qtd button {
+  background: white;
+  color: #c62aff;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.qtd span {
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+/* Resumo das Compras */
+aside {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  width: 20rem;
+  height: auto;
+
+  display: flex;
+  width: 20.875rem;
+  padding: 1.875rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+aside h2 {
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem; /* 157.143% */
+  letter-spacing: 0.04688rem;
+
+aside p {
+  margin: 0.5rem 0;
+  display: flex;
+justify-content: space-between;
+align-items: flex-start;
+align-self: stretch;
+}
+
+aside h3 {
+  margin-top: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.continue-btn {
+    width: 274px;
+    height: 40px;
+    background-color: #ff9800;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: none;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Estilo geral dos campos de cupom de desconto e cálculo de frete */
+extras {
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 2rem;
+}
+
+.discount,
+.shipping {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+label {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Grupo de input e botão */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f7f7f7;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.input-group button {
+  padding: 0.8rem 1.5rem;
+  background-color: #c62aff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.input-group button:hover {
+  background-col
+

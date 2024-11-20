@@ -1,13 +1,12 @@
 import "./SectionProdutosAlta.css";
 import { Link } from "react-router-dom";
-import { ProductContext } from "../../../context/ProductContext";
 import { ProdutoItem } from "../../ProdutoItem/ProdutoItem";
 import { useContext } from "react";
 
 export const SectionProdutosAlta = () => {
-  const {produtos} = useContext(ProductContext)
+  const { produtos } = useContext(ProductContext);
 
-  const produtosLimitados = produtos.slice(0, 8)
+  const produtosLimitados = produtos.slice(0, 8);
 
   return (
     <section className="produtos-em-alta" id="ProdutosEmAlta">
