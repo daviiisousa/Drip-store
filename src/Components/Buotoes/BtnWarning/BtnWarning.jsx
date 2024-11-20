@@ -1,9 +1,9 @@
 import './BtnWarning.css'
 
-export const BtnWarning = ({texto, ...props}) => {
+export const BtnWarning = ({children, ...props}) => {
     return ( 
         <>
-            <button style={props.style} className='btnWarning'>{texto}</button>
+            <button style={props.style} className='btnWarning'>{children}</button>
         </>
      );
 }
