@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./CartPage.css";
 import { Header } from "../../Components/Header/Header";
+import InputGroup from "../../Components/imput/imput/Input";
 
 function CartPage() {
   const [quantity, setQuantity] = useState(1);
@@ -72,27 +73,28 @@ function CartPage() {
               </div>
             </div>
             <div className="extras">
-              <div className="discount">
+              <div className="discountfrete">
                 <label>Cupom de desconto</label>
+                <InputGroup
+                  placeholder="Insira seu código"
+                  type="text"
+                  value={coupon}
+                  onChange={(e) => setCoupon(e.target.value)}
+                />
                 <div className="input-group">
-                  <input
-                    type="text"
-                    placeholder="Insira seu código"
-                    value={coupon}
-                    onChange={(e) => setCoupon(e.target.value)}
-                  />
                   <button onClick={applyCoupon}>OK</button>
                 </div>
               </div>
               <div className="shipping">
                 <label>Calcular frete</label>
+                <InputGroup
+                  type="text"
+                  placeholder="Insira seu CEP"
+                  value={cep}
+                  onChange={(e) => setCep(e.target.value)}
+                  placeholder="Insira seu código"
+                />
                 <div className="input-group">
-                  <input
-                    type="text"
-                    placeholder="Insira seu CEP"
-                    value={cep}
-                    onChange={(e) => setCep(e.target.value)}
-                  />
                   <button onClick={calculateShipping}>OK</button>
                 </div>
               </div>

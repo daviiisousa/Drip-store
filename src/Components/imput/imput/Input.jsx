@@ -1,4 +1,4 @@
-import "./imput.css";
+import "./Input.css";
 
 const InputGroup = ({ placeholder, buttonText, onClick }) => {
   return (
