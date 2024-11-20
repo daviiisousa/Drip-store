@@ -1,12 +1,13 @@
 import { BtnWarning } from "../../Components/Buotoes/BtnWarning/BtnWarning";
-import { Footer } from "../../Components/Footer/Footer";
-import { Header } from "../../Components/Header/Header";
+import { Footer } from "../../Components/FooterComponents/Footer/Footer";
+import { Header } from "../../Components/HeaderComponets/Header/Header";
 import { SectionFinalizarCompra } from "../../Components/Sections/SectionFinalizarCompra/SectionFinalizarCompra";
 
 import "./FinalizarCompra.css";
 
 import sapatoPadrao from "../../assets/HomeFotos/Sapatocarrosel.png";
 import { Link } from "react-router-dom";
+import { Input } from "../../Components/Input/Input";
 
 export const FinalizarCompra = () => {
   return (
@@ -23,18 +24,18 @@ export const FinalizarCompra = () => {
                 Informações Pessoais
               </h2>
               <hr className="hrInformaçoes" />
-              <form className="formInformaçoesPessoais" action="">
+              <form className="formInformaçoesPessoais">
                 <label htmlFor="nome">Nome Completo *</label>
-                <input placeholder="insira seu nome" type="text" id="nome" />
+                <Input placeholder="insira seu nome" type="texte" id="nome" />
 
                 <label htmlFor="cpf">CPF *</label>
-                <input placeholder="insira seu cpf" type="text" id="cpf" />
+                <Input placeholder="insira seu cpf" type="text" id="cpf" />
 
                 <label htmlFor="email">E-mail *</label>
-                <input placeholder="insira seu email" type="text" id="email" />
+                <Input placeholder="insira seu email" type="text" id="email" />
 
                 <label htmlFor="celular">Celular *</label>
-                <input
+                <Input
                   placeholder="insira seu celuar"
                   type="text"
                   id="celular"
@@ -48,27 +49,27 @@ export const FinalizarCompra = () => {
               <hr className="hrInformaçoes" />
               <form className="formInformaçoesPessoais" action="">
                 <label htmlFor="Endereço">Endereço *</label>
-                <input
+                <Input
                   placeholder="insira seu Endereço"
                   type="text"
                   id="Endereço"
                 />
                 <label htmlFor="Bairro">Bairro *</label>
-                <input
+                <Input
                   placeholder="insira seu Bairro"
                   type="text"
                   id="Bairro"
                 />
                 <label htmlFor="Cidade">Cidade *</label>
-                <input
+                <Input
                   placeholder="insira seu Cidade"
                   type="text"
                   id="Cidade"
                 />
                 <label htmlFor="CEP">CEP *</label>
-                <input placeholder="insira seu CEP" type="text" id="CEP" />
+                <Input placeholder="insira seu CEP" type="text" id="CEP" />
                 <label htmlFor="Complemento">Complemento</label>
-                <input
+                <Input
                   placeholder="insira seu Complemento"
                   type="text"
                   id="Complemento"
@@ -92,33 +93,39 @@ export const FinalizarCompra = () => {
                 </div>
               </form>
               <form>
-                <label htmlFor="Cartao" className="labelFinalizarCompra">
-                  Nome do Cartão *
-                </label>
-                <input
-                  className="inputFinalizarComprar"
-                  placeholder="insira o nome do Cartão"
-                  type="text"
-                  id="Cartao"
-                />
+                <div>
+                  <label htmlFor="Cartao" className="labelFinalizarCompra">
+                    Nome do Cartão *
+                  </label>
+                  <Input
+                    style={{ width: "100%" }}
+                    placeholder="insira o nome do Cartão"
+                    type="text"
+                    id="Cartao"
+                  />
+                </div>
                 <div className="divInformaçoesCartao">
                   <div className="divNumeroCartao">
-                    <label htmlFor="CartaoNumero" className="labelFinalizarCompra">
-                    Data o Número do Cartão *
+                    <label
+                      htmlFor="CartaoNumero"
+                      className="labelFinalizarCompra"
+                    >
+                      Data o Número do Cartão *
                     </label>
-                    <input
-                      className="inputFinalizarComprar"
+                    <Input
                       placeholder="Insira o número do Cartão"
                       type="text"
                       id="CartaoNumero"
                     />
                   </div>
                   <div>
-                    <label htmlFor="CartaoValidade" className="labelFinalizarCompra">
-                    Data de validade do Cartão *
+                    <label
+                      htmlFor="CartaoValidade"
+                      className="labelFinalizarCompra"
+                    >
+                      Data de validade do Cartão *
                     </label>
-                    <input
-                      className="inputFinalizarComprar"
+                    <Input
                       placeholder="Insira a valiade do Cartão"
                       type="text"
                       id="CartaoValidade"
@@ -126,13 +133,15 @@ export const FinalizarCompra = () => {
                   </div>
                 </div>
                 <div className="divCVV">
-                  <label htmlFor="CVV *">CVV *</label>
-                  <input                     
-                      className="inputCVV"
-                      placeholder="Insira a valiade do Cartão"
-                      type="text"
-                      id="CVV"
-                    />
+                  <label className="labelFinalizarCompra" htmlFor="CVV">
+                    CVV *
+                  </label>
+                  <Input
+                    style={{ width: "40%" }}
+                    placeholder="Insira a valiade do Cartão"
+                    type="text"
+                    id="CVV"
+                  />
                 </div>
               </form>
             </SectionFinalizarCompra>
@@ -144,17 +153,18 @@ export const FinalizarCompra = () => {
                   <h2 className="tituloTotal">Total</h2>
                   <span className="precoResumo">R$ 219,00</span>
                 </div>
-                <p className="paragrafoPreco">
-                  ou 10x de R$ 21,00 sem juros
-                </p>
-                <Link to={'/comprarFinalizada'}>
-                  <BtnWarning style={{width: '100%', marginTop: '20px'}} texto={'Realizar Pagamento'} />
+                <p className="paragrafoPreco">ou 10x de R$ 21,00 sem juros</p>
+                <Link to={"/comprarFinalizada"}>
+                  <BtnWarning
+                    style={{ width: "100%", marginTop: "20px" }}
+                    texto={"Realizar Pagamento"}
+                  />
                 </Link>
               </div>
             </SectionFinalizarCompra>
           </section>
           <section className="sectionResumo">
-            <SectionFinalizarCompra style={{width: '100%'}}>
+            <SectionFinalizarCompra style={{ width: "100%" }}>
               <div className="divResumo">
                 <h2 className="tituloResumo">RESUMO</h2>
                 <hr className="hrInformaçoes" />
@@ -162,9 +172,7 @@ export const FinalizarCompra = () => {
                   <div className="divImgResumo">
                     <img className="imgResumo" src={sapatoPadrao} alt="" />
                   </div>
-                  <h3>
-                  Tênis Nike Revolution 6 Next Nature Masculino
-                  </h3>
+                  <h3>Tênis Nike Revolution 6 Next Nature Masculino</h3>
                 </div>
               </div>
               <hr className="hrInformaçoes" />
@@ -181,15 +189,16 @@ export const FinalizarCompra = () => {
               </div>
               <div className="divPrecoTotal">
                 <div className="PrecoTotal">
-                    <h2>Total</h2>
-                    <span className="spanPrecoTotal">R$ 219,00</span>
-                  </div>
-                  <p  className="paragrafoPreco">
-                    ou 10x de R$ 21,00 sem juros
-                  </p>
+                  <h2>Total</h2>
+                  <span className="spanPrecoTotal">R$ 219,00</span>
+                </div>
+                <p className="paragrafoPreco">ou 10x de R$ 21,00 sem juros</p>
               </div>
-              <Link to={'/comprarFinalizada'}>
-                <BtnWarning texto={'Realizar Pagamento'} style={{width: '100%'}} />
+              <Link to={"/comprarFinalizada"}>
+                <BtnWarning
+                  texto={"Realizar Pagamento"}
+                  style={{ width: "100%" }}
+                />
               </Link>
             </SectionFinalizarCompra>
           </section>

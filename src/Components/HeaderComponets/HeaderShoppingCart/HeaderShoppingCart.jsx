@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import styles from './HeaderShoppingCart.module.css';
 
-import img from "../../assets/HomeFotos/mini-cart.svg"
+import img from "../../../assets/HomeFotos/mini-cart.svg"
 
 import { CiSearch } from "react-icons/ci";
 
