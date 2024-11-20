@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import { BtnWarning } from "../../Components/Buotoes/BtnWarning/BtnWarning";
-import { Footer } from "../../Components/Footer/Footer";
-import { Header } from "../../Components/Header/Header";
+import { Footer } from "../../Components/FooterComponents/Footer/Footer";
+import { Header } from "../../Components/HeaderComponets/Header/Header";
 
 import "./ComprarFinalizada.css";
 
@@ -97,9 +98,11 @@ export const ComprarFinalizada = () => {
               </div>
             </div>
             <div className="back-home-container">
-              <BtnWarning style={{width: '39%'}} >
+             <Link style={{width: '39%'}} to={'/'}> 
+             <BtnWarning style={{width: '100%'}} >
                 Voltar para Home
               </BtnWarning>
+             </Link>
             </div>
           </div>
         </main>

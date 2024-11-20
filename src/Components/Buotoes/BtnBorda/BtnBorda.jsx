@@ -1,9 +1,9 @@
 import './BtnBorda.css'
 
-export const BtnBorda = ({texto}) => {
+export const BtnBorda = ({texto, ...props}) => {
     return ( 
         <>
-         <button className='btnBorda'>{texto}</button>
+         <button style={props.style} className='btnBorda'>{texto}</button>
         </>
      );
 }

@@ -1,5 +1,5 @@
-import { Footer } from "../../Components/Footer/Footer";
-import { Header } from "../../Components/Header/Header";
+import { Footer } from "../../Components/FooterComponents/Footer/Footer";
+import { Header } from "../../Components/HeaderComponets/Header/Header";
 
 export const MeusPedidos = () => {
   return (

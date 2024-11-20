@@ -1,10 +1,10 @@
 import styles from "./FooterMainInformations.module.css";
 
-import imglogo from "../../assets/HomeFotos/logowhite.png";
+import imglogo from "../../../assets/HomeFotos/logowhite.png";
 
-import icon1 from "../../assets/Icons/iconfacebook.png";
-import icon2 from "../../assets/Icons/iconisntagram.png";
-import icon3 from "../../assets/Icons/icontwitter.png";
+import icon1 from "../../../assets/Icons/iconfacebook.png";
+import icon2 from "../../../assets/Icons/iconisntagram.png";
+import icon3 from "../../../assets/Icons/icontwitter.png";
 
 export const FooterMainInformations = () => {
   return (
