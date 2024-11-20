@@ -20,7 +20,7 @@ function Login() {
             <div className="login-container">
               <h2>Acesse sua conta</h2>
               <p className="paragrafoLogin">
-                Novo cliente? Então registre-se <Link to={'/criarConta'}>aqui</Link>.
+                Novo cliente? Então registre-se <Link to={'/register'}>aqui</Link>.
               </p>
               <form className="login-form">
                 <label className="labelLogin" htmlFor="login">
