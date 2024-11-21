@@ -1,0 +1,95 @@
+  .headerLogin{
+    padding: 25px;
+    margin-left: 0px;
+    background-color: #ffffff;
+
+  }
+  
+  .linkLogin{
+    text-decoration: none;
+  }
+  
+  .logo{
+    margin-left: 5px;
+    font-size: 36.4px;
+    font-weight: 600;
+    line-height: 44.05px;
+    letter-spacing: -0.01em;
+    color: var(--primary);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .create-account {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .account-form h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+
+  }
+  
+  .form-group-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .form-group-checkbox input {
+    margin-right: 10px;   
+  }
+
+  .titlle {
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+  }
+
+  .titlle2 {
+    margin-top: 35px;
+    margin-bottom: 15px;
+
+  }
+
+  .form-group-checkbox input[type="checkbox"] {
+    accent-color: #C92071; 
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 50px;
+    transform: scale(1.5)
+}
+
+

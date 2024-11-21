@@ -1,11 +1,10 @@
-/* eslint-disable react/prop-types */
-import styles from "./HeaderShoppingCart.module.css";
+import styles from './HeaderShoppingCart.module.css';
 
-import img from "../../assets/HomeFotos/mini-cart.svg";
-import sapato from "../../assets/HomeFotos/Sapatocarrosel.png";
+import img from "../../../assets/HomeFotos/mini-cart.svg"
+import sapato from '../../../assets/HomeFotos/Sapatocarrosel.png'
 
 import { CiSearch } from "react-icons/ci";
-import { useState } from "react";
+import { useState } from 'react';
 
 export const HeaderShoppingCart = ({ notificationCount = 5 }) => {
   const [isActive, setIsActive] = useState(false);

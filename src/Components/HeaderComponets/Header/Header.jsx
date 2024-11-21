@@ -3,11 +3,11 @@ import { HeaderSearchInput } from "../HeaderSearchInput/HeaderSearchInput"
 
 import styles from "./Header.module.css"
 
-import iconmenu from "../../assets/Icons/Menu.svg"
+import iconmenu from "../../../assets/Icons/Menu.svg"
 
-import { Nav } from "../Nav/Nav"
+import { Nav } from "../../Nav/Nav"
 import { Link } from "react-router-dom"
-import { Logo } from "../Logo/Logo"
+import { Logo } from "../../Logo/Logo"
 
 export const Header = () => {
   return (
@@ -21,7 +21,7 @@ export const Header = () => {
         </div>
         <div className={styles.containerSearchAndRegister}>
           <HeaderSearchInput />
-          <Link to={'/criarConta'} className={styles.linkRegister}>Cadastre-se</Link>
+          <Link className={styles.linkRegister} to= {'/Register'}>Cadastre-se</Link>
           <Link className={styles.buttonLogin} to={'/login'}>
           Entrar
           </Link>

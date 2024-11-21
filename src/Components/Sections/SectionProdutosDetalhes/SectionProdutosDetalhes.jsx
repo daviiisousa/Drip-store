@@ -105,7 +105,9 @@ export const SectionProdutosDetalhes = () => {
             </div>
           </div>
           <Link to={'/compraDetalhes'} className="btn-container">
-            <BtnWarning texto={"Comprar"} />
+            <BtnWarning>
+              Comprar
+            </BtnWarning>
           </Link>
         </div>
       </section>

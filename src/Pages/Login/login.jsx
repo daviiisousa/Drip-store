@@ -1,12 +1,9 @@
 import React from "react";
 import "./login.css";
-import { Footer } from "../../Components/Footer/Footer";
+import { Footer } from "../../Components/FooterComponents/Footer/Footer";
 import { Logo } from "../../Components/Logo/Logo";
 import { Link } from "react-router-dom";
-// import SapatoLogin from "../../assets/HomeFotos/SapatoLogin.png"
-// import SapatoLogin2 from "../../assets/HomeFotos/SapatoLogin2.png"
-// import facebook from "../../../public/facebook.png"
-// import gmail from "../../assets/Icons/gmail.png"
+
 
 function Login() {
   return (
@@ -20,7 +17,7 @@ function Login() {
             <div className="login-container">
               <h2>Acesse sua conta</h2>
               <p className="paragrafoLogin">
-                Novo cliente? Então registre-se <Link to={'/criarConta'}>aqui</Link>.
+                Novo cliente? Então registre-se <Link to={'/register'}>aqui</Link>.
               </p>
               <form className="login-form">
                 <label className="labelLogin" htmlFor="login">
@@ -51,8 +48,8 @@ function Login() {
                 </button>
                 <div className="social-login">
                   <p className="login-options">Ou faça login com</p>
-                  <img src="../../../public/gmail.png" alt="Google" />
-                  <img src="../../../public/facebook.png" alt="Facebook" />
+                  <img className= "social-login2" src="../../../public/gmail.png" alt="Google" />
+                  <img  className= "social-login2" src="../../../public/facebook.png" alt="Facebook" />
                 </div>
               </form>
             </div>
