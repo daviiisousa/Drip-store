@@ -1,9 +1,9 @@
 import './BtnPrimary.css'
 
-export const BtnPrimary = ({children, texto}) => {
+export const BtnPrimary = ({children, ...props}) => {
     return ( 
         <>
-        <button className='btnPrimary' texto={texto}>{children}</button>
+        <button className='btnPrimary' style={props.style}>{children}</button>
         </>
      );
 }

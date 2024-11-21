@@ -13,12 +13,6 @@
   letter-spacing: 0.75px;
 }
 
-/* .active {
-  font-weight: 700;
-  color: var(--primary);
-  border-bottom: 2px solid var(--primary);
-} */
-
 .navLink{
   text-decoration: none;
   color: var( --dark-gray-2);

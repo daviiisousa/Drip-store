@@ -1,12 +1,9 @@
 import React from "react";
 import "./login.css";
-import { Footer } from "../../Components/Footer/Footer";
+import { Footer } from "../../Components/FooterComponents/Footer/Footer";
 import { Logo } from "../../Components/Logo/Logo";
 import { Link } from "react-router-dom";
-// import SapatoLogin from "../../assets/HomeFotos/SapatoLogin.png"
-// import SapatoLogin2 from "../../assets/HomeFotos/SapatoLogin2.png"
-// import facebook from "../../../public/facebook.png"
-// import gmail from "../../assets/Icons/gmail.png"
+
 
 function Login() {
   return (

@@ -42,31 +42,6 @@
     font-weight: 700;
   }
 
-  input {
-    margin-bottom: 20px;
-    background-color: #eeecec;
-    padding: 16px 12px;
-    border-radius: 8px;
-    border: none;
-  }
-}
-
-.inputFinalizarComprar {
-  margin: 10px 0px;
-  background-color: #eeecec;
-  padding: 16px 12px;
-  border-radius: 8px;
-  border: none;
-  width: 100%;
-}
-
-.inputCVV {
-  margin: 10px 0px;
-  background-color: #eeecec;
-  padding: 16px 12px;
-  border-radius: 8px;
-  border: none;
-  width: 50%;
 }
 
 .divCVV{

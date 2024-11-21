@@ -3,11 +3,11 @@ import { HeaderSearchInput } from "../HeaderSearchInput/HeaderSearchInput"
 
 import styles from "./Header.module.css"
 
-import iconmenu from "../../assets/Icons/Menu.svg"
+import iconmenu from "../../../assets/Icons/Menu.svg"
 
-import { Nav } from "../Nav/Nav"
+import { Nav } from "../../Nav/Nav"
 import { Link } from "react-router-dom"
-import { Logo } from "../Logo/Logo"
+import { Logo } from "../../Logo/Logo"
 
 export const Header = () => {
   return (
