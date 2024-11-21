@@ -7,7 +7,7 @@ import { BtnWarning } from "../../Components/Buotoes/BtnWarning/BtnWarning";
 import { ProductContext } from "../../context/ProductContext";
 import { ProdutoItem } from "../../Components/ProdutoItem/ProdutoItem";
 
-import sapatoCardPage from "../../assets/HomeFotos/Sapatocarrosel.png";
+
 
 function CartPage() {
   const { produtos } = useContext(ProductContext);
@@ -65,9 +65,7 @@ function CartPage() {
             </div>
             <div className="tbody">
               <div className="product">
-                <div className="divImg">
-                  {/* <img className="sapatoCardPage" src={sapatoCardPage} alt="Produto" /> */}
-                </div>
+              
                 <div className="info">
                   <div className="titulo">
                     Tênis Nike Revolution 6 Next Nature Masculino

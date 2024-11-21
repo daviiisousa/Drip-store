@@ -123,21 +123,7 @@
   font-weight: bold;
 }
 
-.continue-btn {
-  width: 274px;
-  height: 40px;
-  background-color: #ff9800;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 14px;
-  text-transform: none;
-  letter-spacing: 0.1em;
-  line-height: 1.5;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+
 
 /* Estilo geral dos campos de cupom de desconto e cálculo de frete */
 

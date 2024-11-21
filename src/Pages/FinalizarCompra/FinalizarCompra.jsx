@@ -26,16 +26,20 @@ export const FinalizarCompra = () => {
               <hr className="hrInformaçoes" />
               <form className="formInformaçoesPessoais">
                 <label htmlFor="nome">Nome Completo *</label>
-                <Input placeholder="insira seu nome" type="texte" id="nome" />
+                <Input
+                  required placeholder="insira seu nome" type="texte" id="nome" />
 
                 <label htmlFor="cpf">CPF *</label>
-                <Input placeholder="insira seu cpf" type="text" id="cpf" />
+                <Input
+                  required placeholder="insira seu cpf" type="text" id="cpf" />
 
                 <label htmlFor="email">E-mail *</label>
-                <Input placeholder="insira seu email" type="text" id="email" />
+                <Input
+                  required placeholder="insira seu email" type="text" id="email" />
 
                 <label htmlFor="celular">Celular *</label>
                 <Input
+                  required
                   placeholder="insira seu celuar"
                   type="text"
                   id="celular"
@@ -50,26 +54,31 @@ export const FinalizarCompra = () => {
               <form className="formInformaçoesPessoais" action="">
                 <label htmlFor="Endereço">Endereço *</label>
                 <Input
+                  required
                   placeholder="insira seu Endereço"
                   type="text"
                   id="Endereço"
                 />
                 <label htmlFor="Bairro">Bairro *</label>
                 <Input
+                  required
                   placeholder="insira seu Bairro"
                   type="text"
                   id="Bairro"
                 />
                 <label htmlFor="Cidade">Cidade *</label>
                 <Input
+                  required
                   placeholder="insira seu Cidade"
                   type="text"
                   id="Cidade"
                 />
                 <label htmlFor="CEP">CEP *</label>
-                <Input placeholder="insira seu CEP" type="text" id="CEP" />
+                <Input
+                  required placeholder="insira seu CEP" type="text" id="CEP" />
                 <label htmlFor="Complemento">Complemento</label>
                 <Input
+                  required
                   placeholder="insira seu Complemento"
                   type="text"
                   id="Complemento"
@@ -98,6 +107,7 @@ export const FinalizarCompra = () => {
                     Nome do Cartão *
                   </label>
                   <Input
+                    required
                     style={{ width: "100%" }}
                     placeholder="insira o nome do Cartão"
                     type="text"
@@ -113,6 +123,7 @@ export const FinalizarCompra = () => {
                       Data o Número do Cartão *
                     </label>
                     <Input
+                      required
                       placeholder="Insira o número do Cartão"
                       type="text"
                       id="CartaoNumero"
@@ -126,6 +137,7 @@ export const FinalizarCompra = () => {
                       Data de validade do Cartão *
                     </label>
                     <Input
+                      required
                       placeholder="Insira a valiade do Cartão"
                       type="text"
                       id="CartaoValidade"
@@ -137,6 +149,7 @@ export const FinalizarCompra = () => {
                     CVV *
                   </label>
                   <Input
+                    required
                     style={{ width: "40%" }}
                     placeholder="Insira a valiade do Cartão"
                     type="text"
@@ -156,7 +169,7 @@ export const FinalizarCompra = () => {
                 <p className="paragrafoPreco">
                   ou 10x de R$ 21,00 sem juros
                 </p>
-                <Link to={'/comprarFinalizada'}>
+                <Link to={'/compraFinalizada'}>
                   <BtnWarning style={{width: '100%', marginTop: '20px'}}>
                     Finalizar Pagamento
                   </BtnWarning>
@@ -171,7 +184,7 @@ export const FinalizarCompra = () => {
                 <hr className="hrInformaçoes" />
                 <div className="divResumoItem">
                   <div className="divImgResumo">
-                    <img className="imgResumo" src={sapatoPadrao} alt="" />
+                    <img className="imgResumo" src={sapatoPadrao} alt="sapato" />
                   </div>
                   <h3>Tênis Nike Revolution 6 Next Nature Masculino</h3>
                 </div>
