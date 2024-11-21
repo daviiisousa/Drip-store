@@ -73,30 +73,25 @@ function CartPage() {
               </div>
             </div>
             <div className="extras">
-              <div className="discountfrete">
-                <label>Cupom de desconto</label>
+              <div>
+                <label className="tituloExtra">Cupom de desconto</label>
                 <InputGroup
                   placeholder="Insira seu código"
-                  type="text"
                   value={coupon}
                   onChange={(e) => setCoupon(e.target.value)}
+                  buttonText="OK"
+                  onClick={applyCoupon}
                 />
-                <div className="input-group">
-                  <button onClick={applyCoupon}>OK</button>
-                </div>
               </div>
-              <div className="shipping">
-                <label>Calcular frete</label>
+              <div className="frete">
+                <label className="tituloExtra">Calcular frete</label>
                 <InputGroup
-                  type="text"
                   placeholder="Insira seu CEP"
                   value={cep}
                   onChange={(e) => setCep(e.target.value)}
-                  placeholder="Insira seu código"
+                  buttonText="OK"
+                  onClick={calculateShipping}
                 />
-                <div className="input-group">
-                  <button onClick={calculateShipping}>OK</button>
-                </div>
               </div>
             </div>
           </section>
