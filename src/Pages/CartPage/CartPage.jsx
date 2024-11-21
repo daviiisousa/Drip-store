@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./CartPage.css";
 import { Header } from "../../Components/HeaderComponets/Header/Header";
 import InputGroup from "../../Components/imput/imput/Input";
 import { Link } from "react-router-dom";
 import { BtnWarning } from "../../Components/Buotoes/BtnWarning/BtnWarning";
+import { ProductContext } from "../../context/ProductContext";
+import { ProdutoItem } from "../../Components/ProdutoItem/ProdutoItem";
+
 
 function CartPage() {
+
+  const { produtos } = useContext(ProductContext);
+
+  const produtosFiltrado = produtos.slice(0, 4)
+
   const [quantity, setQuantity] = useState(1);
   const [coupon, setCoupon] = useState("");
   const [cep, setCep] = useState("");
@@ -97,17 +105,30 @@ function CartPage() {
               </div>
             </div>
           </section>
-          <aside>
+          <aside className="asideCartPage">
             <h2>Resumo das Compras</h2>
             <p>Subtotal: R$ {subtotal.toFixed(2)}</p>
             <p>Frete: R$ {shipping.toFixed(2)}</p>
             <p>Desconto: R$ {discount.toFixed(2)}</p>
             <h3>Total: R$ {total.toFixed(2)}</h3>
-            <Link style={{width: '100%'}}>
+            <Link to={'/finalizarCompra'} style={{width: '100%'}}>
               <BtnWarning style={{width: '100%'}}>Continuar</BtnWarning>
             </Link>
           </aside>
         </div>
+        <div className="produtos">
+        {produtosFiltrado.map((produto) => (
+          <ProdutoItem
+            key={produto.id}
+            nome={produto.nome}
+            categoria={produto.categoria}
+            precoAntigo={produto.precoAntigo}
+            precoNovo={produto.precoNovo}
+            desconto={produto.desconto}
+            imagem={produto.imagem}
+          />
+        ))}
+      </div>
       </main>
     </>
   );
