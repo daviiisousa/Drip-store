@@ -1,6 +1,8 @@
 .headerLogin{
   padding: 25px;
   margin-left: 120px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  
 }
 
 .linkLogin{
@@ -26,7 +28,7 @@
 
 .login-container {
   background-color: white;
-  padding: 30px;
+  padding: 35px 30px 30px 30px ;
   border-radius: 4px;
   width: 583px;
   height: 560px;
@@ -47,15 +49,6 @@
 }
 .paragrafoLogin a {
   color: #c92071;
-}
-
-.forgot-password {
-  color: #ff3388;
-  text-decoration: none;
-}
-
-.forgot-password:hover {
-  text-decoration: underline;
 }
 
 .login-form {
@@ -85,10 +78,19 @@
 
 .forgot-password {
   font-size: 15px;
-  color: #000000;
+  color: #686868;
   text-decoration: underline;
   text-align: left;
-  margin: 22px 0 22px 0
+  margin: 22px 0 22px 0;
+  height: 20px;
+  width: 160px;
+
+}
+
+.forgot-password:hover {
+ color: #252525;
+ transition: 0.800ms;
+
 }
 
 .login-button {
@@ -103,19 +105,19 @@
 }
 
 .login-button:hover {
-  background-color: #c92071;
+  background-color: #f1117d;
 }
 
 .login-options {
-  /* margin-top: 10px; */
+  /* margin-top: 20px; */
   font-size: 14px;
   color: #888;
   text-align: center;
 }
 
 .social-login {
+  margin-top: 20px;
   text-align: center;
-  /* flex-direction: row; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,10 +127,14 @@
 .social-login2 {
   width: 24px;
   height: 24px;
-  margin: 15px 13px;
   cursor: pointer;
   text-align: center;
   align-items: center;
+  margin: 0 15px 0 15px;
+}
+
+.face {
+  margin: 0;
 }
 
 .image-container {

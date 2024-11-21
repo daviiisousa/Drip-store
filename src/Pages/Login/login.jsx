@@ -20,7 +20,7 @@ function Login() {
             <div className="login-container">
               <h2>Acesse sua conta</h2>
               <p className="paragrafoLogin">
-                Novo cliente? Então registre-se <Link to={'/criarConta'}>aqui</Link>.
+                Novo cliente? Então registre-se <Link to={'/Register'}>aqui</Link>.
               </p>
               <form className="login-form">
                 <label className="labelLogin" htmlFor="login">
@@ -52,7 +52,7 @@ function Login() {
                 <div className="social-login">
                   <p className="login-options">Ou faça login com</p>
                   <img className= "social-login2" src="../../../public/gmail.png" alt="Google" />
-                  <img  className= "social-login2" src="../../../public/facebook.png" alt="Facebook" />
+                  <img  className= "social-login2 face" src="../../../public/facebook.png" alt="Facebook" />
                 </div>
               </form>
             </div>

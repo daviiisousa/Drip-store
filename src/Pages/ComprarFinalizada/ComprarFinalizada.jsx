@@ -7,7 +7,7 @@ export const ComprarFinalizada = () => {
     return ( 
         <>
             <body>
-                <header>
+                <header className="Header">
                     <Header />
                 </header>
                 <main>
@@ -72,10 +72,12 @@ export const ComprarFinalizada = () => {
         <div className="section">
           <h3>Resumo da compra</h3>
           <div className="product">
-            <img
-              src="../../../public/Shoes.png"
-              alt="Shoes"
-            />
+            <div className="productBoxImage">
+              <img
+                src="../../../public/Shoes.png"
+                alt="Shoes"
+              />
+            </div>
             <p>Tênis Nike Revolution 6 Next Nature <br />Masculino</p>
           </div>
           <div className="total">
