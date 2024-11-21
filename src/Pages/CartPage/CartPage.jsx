@@ -7,12 +7,12 @@ import { BtnWarning } from "../../Components/Buotoes/BtnWarning/BtnWarning";
 import { ProductContext } from "../../context/ProductContext";
 import { ProdutoItem } from "../../Components/ProdutoItem/ProdutoItem";
 
+import sapatoCardPage from "../../assets/HomeFotos/Sapatocarrosel.png";
 
 function CartPage() {
-
   const { produtos } = useContext(ProductContext);
 
-  const produtosFiltrado = produtos.slice(0, 4)
+  const produtosFiltrado = produtos.slice(0, 4);
 
   const [quantity, setQuantity] = useState(1);
   const [coupon, setCoupon] = useState("");
@@ -49,9 +49,11 @@ function CartPage() {
 
   return (
     <>
-      <Header />
-      <main>
-        <div className="content">
+      <header>
+        <Header />
+      </header>
+      <main className="mainCartPage">
+        <div className="cartPageContent">
           <section className="sectioncart">
             <div className="titulos">
               <h3>MEU CARRINHO</h3>
@@ -63,7 +65,9 @@ function CartPage() {
             </div>
             <div className="tbody">
               <div className="product">
-                <img src="https://picsum.photos/130/104" alt="Produto" />
+                <div className="divImg">
+                  {/* <img className="sapatoCardPage" src={sapatoCardPage} alt="Produto" /> */}
+                </div>
                 <div className="info">
                   <div className="titulo">
                     Tênis Nike Revolution 6 Next Nature Masculino
@@ -111,24 +115,24 @@ function CartPage() {
             <p>Frete: R$ {shipping.toFixed(2)}</p>
             <p>Desconto: R$ {discount.toFixed(2)}</p>
             <h3>Total: R$ {total.toFixed(2)}</h3>
-            <Link to={'/finalizarCompra'} style={{width: '100%'}}>
-              <BtnWarning style={{width: '100%'}}>Continuar</BtnWarning>
+            <Link to={"/finalizarCompra"} style={{ width: "100%" }}>
+              <BtnWarning style={{ width: "100%" }}>Continuar</BtnWarning>
             </Link>
           </aside>
         </div>
         <div className="produtos">
-        {produtosFiltrado.map((produto) => (
-          <ProdutoItem
-            key={produto.id}
-            nome={produto.nome}
-            categoria={produto.categoria}
-            precoAntigo={produto.precoAntigo}
-            precoNovo={produto.precoNovo}
-            desconto={produto.desconto}
-            imagem={produto.imagem}
-          />
-        ))}
-      </div>
+          {produtosFiltrado.map((produto) => (
+            <ProdutoItem
+              key={produto.id}
+              nome={produto.nome}
+              categoria={produto.categoria}
+              precoAntigo={produto.precoAntigo}
+              precoNovo={produto.precoNovo}
+              desconto={produto.desconto}
+              imagem={produto.imagem}
+            />
+          ))}
+        </div>
       </main>
     </>
   );
