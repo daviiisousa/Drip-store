@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./CartPage.css";
-import { Header } from "../../Components/Header/Header";
+import { Header } from "../../Components/HeaderComponets/Header/Header";
 import InputGroup from "../../Components/imput/imput/Input";
 
 function CartPage() {

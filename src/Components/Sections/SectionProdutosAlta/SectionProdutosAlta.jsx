@@ -2,6 +2,7 @@ import "./SectionProdutosAlta.css";
 import { Link } from "react-router-dom";
 import { ProdutoItem } from "../../ProdutoItem/ProdutoItem";
 import { useContext } from "react";
+import { ProductContext } from "../../../context/ProductContext";
 
 export const SectionProdutosAlta = () => {
   const { produtos } = useContext(ProductContext);

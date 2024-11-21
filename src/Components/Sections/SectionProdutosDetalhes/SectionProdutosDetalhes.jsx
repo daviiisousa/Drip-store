@@ -101,11 +101,16 @@ export const SectionProdutosDetalhes = () => {
               <input className="corInput red" type="radio" name="cor" id="" />
               <input className="corInput black" type="radio" name="cor" id="" />
               <input className="corInput brow" type="radio" name="cor" id="" />
-              <input className="corInput purple" type="radio" name="cor" id="" />
+              <input
+                className="corInput purple"
+                type="radio"
+                name="cor"
+                id=""
+              />
             </div>
           </div>
-          <Link to={'/compraDetalhes'} className="btn-container">
-            <BtnWarning texto={"Comprar"} />
+          <Link to={"/CartPage"} className="btn-container">
+            <BtnWarning>Comprar</BtnWarning>
           </Link>
         </div>
       </section>

@@ -2,30 +2,25 @@ import styles from "./Nav.module.css";
 import { Link } from "react-router-dom";
 
 export const Nav = () => {
-  // const [active, setActive] = useState("");
+  function handleColorNav(e) {
+    e.target.style.borderBottom = "2px solid #c92071";
+    e.target.style.color = "#c92071";
+  }
 
-  // const handleNavClick = (item) => {
-  //   setActive(item);
-  // };
+  const caminhos = ['/', '/Produtos', '', '/meusPedidos' ]
 
   return (
     <div className={styles.container}>
-      {/* {["Home", "Produtos", "Categorias", "Meus Pedidos"].map((item) => (
+      {["Home", "Produtos", 'Categorias', "Meus Pedidos" ].map((item, index) => (
         <Link
-        to={'/produtos'}
           key={item}
-          className={`${styles.navText} ${
-            active === item ? styles.active : ""
-          }`}
-          onClick={() => handleNavClick(item)}
+          onClick={(e) => handleColorNav(e)}
+          className={styles.navLink}
+          to={caminhos[index]}
         >
           {item}
         </Link>
-      ))} */}
-      <Link className={styles.navLink} to={"/"}>Home</Link>
-      <Link className={styles.navLink} to={"/produtos"}>Produtos</Link>
-      <Link className={styles.navLink} >Categorias</Link>
-      <Link className={styles.navLink} to={'/meusPedidos'}>Meus Pedidos</Link>
+      ))}
     </div>
   );
 };
