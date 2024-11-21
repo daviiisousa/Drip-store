@@ -1,9 +1,9 @@
-import { Footer } from "../../Components/Footer/Footer";
+import { Footer } from "../../Components/FooterComponents/Footer/Footer";
 import { SectionCarrosel } from "../../Components/Sections/SectionCarrosel/SectionCarrosel";
 import { SectionColecaoDestaque } from "../../Components/Sections/SectionColecaoDestaque/SectionColecaoDestaque";
 import { SectionOfertaEspecial } from "../../Components/Sections/SectionOfertaEspecial/SectionOfertaEspecial";
 import { SectionProdutosAlta } from "../../Components/Sections/SectionProdutosAlta/SectionProdutosAlta";
-import { Header } from "../../Components/Header/Header";
+import { Header } from "../../Components/HeaderComponets/Header/Header";
 import "./Home.css";
 
 export const Home = () => {

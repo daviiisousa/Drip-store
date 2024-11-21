@@ -1,9 +1,9 @@
 import './BtnDisabled.css'
 
-export const BtnDisabled = ({texto}) => {
+export const BtnDisabled = ({texto, ...props}) => {
     return ( 
         <>
-        <button className='btnDisabled'>{texto}</button>
+        <button style={props.style} className='btnDisabled'>{texto}</button>
         </>
      );
 }
