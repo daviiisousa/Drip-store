@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./CartPage.css";
 import { Header } from "../../Components/HeaderComponets/Header/Header";
 import InputGroup from "../../Components/imput/imput/Input";
+import { Link } from "react-router-dom";
+import { BtnWarning } from "../../Components/Buotoes/BtnWarning/BtnWarning";
 
 function CartPage() {
   const [quantity, setQuantity] = useState(1);
@@ -101,7 +103,9 @@ function CartPage() {
             <p>Frete: R$ {shipping.toFixed(2)}</p>
             <p>Desconto: R$ {discount.toFixed(2)}</p>
             <h3>Total: R$ {total.toFixed(2)}</h3>
-            <button className="continue-btn">Continuar</button>
+            <Link style={{width: '100%'}}>
+              <BtnWarning style={{width: '100%'}}>Continuar</BtnWarning>
+            </Link>
           </aside>
         </div>
       </main>

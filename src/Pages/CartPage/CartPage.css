@@ -1,9 +1,4 @@
 /* Estilos Gerais */
-main {
-  padding: 0rem 1.2rem 0 1.2rem;
-  margin: 0rem 6rem 0;
-}
-
 .content {
   display: flex;
   gap: 1.5rem;
